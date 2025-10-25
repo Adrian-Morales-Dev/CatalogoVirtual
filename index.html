@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi Catálogo Virtual</title>
+    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" 
+          rel="stylesheet" 
+          integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" 
+          crossorigin="anonymous">
+    
+    <style>
+        body {
+            background-color: #f8f9fa; /* Un fondo gris claro */
+        }
+        .card-img-top {
+            width: 100%;
+            height: 200px; /* Altura fija para las imágenes */
+            object-fit: cover; /* Asegura que la imagen cubra el espacio sin distorsionarse */
+        }
+        .card {
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1); /* Sombra suave */
+            transition: transform 0.2s; /* Animación ligera */
+        }
+        .card:hover {
+            transform: scale(1.03); /* Efecto de zoom al pasar el mouse */
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container my-5 text-center">
+        <h1 class="display-4">📦 Mi Catálogo de Productos</h1>
+        <p class="lead">Aquí puedes ver todos los productos disponibles.</p>
+    </div>
+
+    <div class="container">
+        <div class="row">
+
+            <div class="col-lg-4 col-md-6 mb-4">
+                <div class="card h-100">
+                    <img src="imagenes/prueba1.jpg" 
+                         class="card-img-top" 
+                         alt="Descripción de la imagen">
+                    <div class="card-body">
+                        <h5 class="card-title">Producto 1</h5>
+                        <p class="card-text">
+                            Una breve descripción del producto. 
+                            Puede incluir características principales o materiales.
+                        </p>
+                    </div>
+                    <div class="card-footer text-center">
+                        <a href="#" class="btn btn-primary">Ver detalles</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 mb-4">
+                <div class="card h-100">
+                    <img src="imagenes/prueba2.jpg" 
+                         class="card-img-top" 
+                         alt="Descripción de la imagen">
+                    <div class="card-body">
+                        <h5 class="card-title">Producto 2</h5>
+                        <p class="card-text">
+                            Descripción del segundo artículo. 
+                            Bootstrap se encargará de que se vean bien en cualquier dispositivo.
+                        </p>
+                    </div>
+                    <div class="card-footer text-center">
+                        <a href="#" class="btn btn-primary">Comprar ahora</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 mb-4">
+                <div class="card h-100">
+                    <img src="https://via.placeholder.com/600x400.png?text=Producto+3" 
+                         class="card-img-top" 
+                         alt="Descripción de la imagen">
+                    <div class="card-body">
+                        <h5 class="card-title">Producto 3</h5>
+                        <p class="card-text">
+                            Puedes copiar y pegar este bloque 
+                            (desde "INICIO DE UN PRODUCTO" hasta "FIN DE UN PRODUCTO") 
+                            para agregar más artículos.
+                        </p>
+                    </div>
+                    <div class="card-footer text-center">
+                        <a href="#" class="btn btn-secondary">Más información</a>
+                    </div>
+                </div>
+            </div>
+            </div> </div> <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" 
+            integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" 
+            crossorigin="anonymous"></script>
+</body>
+</html>
