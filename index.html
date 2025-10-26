@@ -43,7 +43,7 @@
 
         /* --- Sección Héroe (Inicio) --- */
         .hero-section {
-            background: linear-gradient(rgba(18, 18, 18, 0.85), rgba(18, 18, 18, 0.85)), url('https://images.unsplash.com/photo-1511379938547-c1f69419868d?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwyODE1MDl8MHwxfGFsbHx8fHx8fHx8fDE2NzQwOTE1OTk&ixlib=rb-4.0.3&q=80&w=1920');
+            background: linear-gradient(rgba(18, 18, 18, 0.85), rgba(18, 18, 18, 0.85)), url('https://images.unsplash.com/photo-1511379938547-c1f69419868d?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwyODE1MDl8MHwxfGFsbHx8fHx8fHx8fDE2NzQwOTE1OTk&ixlib.rb-4.0.3&q=80&w=1920');
             background-size: cover;
             background-position: center center;
             height: 100vh;
@@ -76,7 +76,7 @@
             border-color: #00BFFF;
             color: #121212;
             transition: all 0.3s ease;
-            margin: 0.5rem; /* Espacio entre los botones */
+            margin: 0.5rem;
         }
         .btn-cta:hover {
             background-color: #fff;
@@ -147,7 +147,13 @@
             padding-bottom: 10px;
             display: inline-block;
         }
+        /* Iconos en los títulos */
+        .seccion-titulo i {
+            color: #00BFFF;
+            margin-right: 10px;
+        }
         
+        /* --- Sección de Contacto --- */
         .contact-info-item {
             font-size: 1.1rem;
             margin-bottom: 1.5rem;
@@ -158,6 +164,35 @@
             margin-right: 15px;
             width: 30px;
         }
+        
+        /* --- 2. NUEVOS ESTILOS PARA TESTIMONIOS --- */
+        .testimonial-card {
+            background-color: #1c1c1c;
+            border-left: 5px solid #00BFFF;
+            padding: 30px;
+            border-radius: 10px;
+            margin-bottom: 20px;
+            height: 100%; /* Para alinear tarjetas */
+        }
+        .testimonial-card p.testimonio-texto {
+            font-size: 1.1rem;
+            font-style: italic;
+            color: #eee;
+            margin-bottom: 1.5rem;
+        }
+        .testimonial-card .client-name {
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 700;
+            color: #fff;
+            margin-top: 15px;
+            margin-bottom: 0;
+        }
+        .testimonial-card .client-title {
+            font-size: 0.9rem;
+            color: #aaa;
+        }
+        /* --- FIN DE ESTILOS DE TESTIMONIOS --- */
+
 
         /* ARREGLO PARA MÓVILES */
         @media (max-width: 768px) {
@@ -209,6 +244,9 @@
                         <a class="nav-link" href="#" onclick="showSection('content-microfonos', this)">Micrófonos</a>
                     </li>
                     <li class="nav-item">
+                        <a class="nav-link" href="#" onclick="showSection('content-testimonios', this)">Testimonios</a>
+                    </li>
+                    <li class="nav-item">
                         <a class="nav-link" href="#" onclick="showSection('content-contacto', this)">Contáctanos</a>
                     </li>
                 </ul>
@@ -231,23 +269,22 @@
                     <h2 class="catalogo-titulo-inicio mt-5">Nuestro Catálogo</h2>
                     <div class="hero-button-group">
                         <a href="#" class="btn btn-cta" onclick="showSection('content-amplificadores', document.querySelector('.nav-link[onclick*=\'content-amplificadores\']'))">
-                            🔊 Amplificadores
+                            <i class="bi bi-volume-up-fill"></i> Amplificadores
                         </a>
                         <a href="#" class="btn btn-cta" onclick="showSection('content-iluminacion', document.querySelector('.nav-link[onclick*=\'content-iluminacion\']'))">
-                            💡 Iluminación
+                            <i class="bi bi-lightbulb-fill"></i> Iluminación
                         </a>
                         <a href="#" class="btn btn-cta" onclick="showSection('content-pantallas', document.querySelector('.nav-link[onclick*=\'content-pantallas\']'))">
-                            📺 Pantallas LED'S
+                            <i class="bi bi-display-fill"></i> Pantallas LED'S
                         </a>
                         <a href="#" class="btn btn-cta" onclick="showSection('content-microfonos', document.querySelector('.nav-link[onclick*=\'content-microfonos\']'))">
-                            🎤 Micrófonos
+                            <i class="bi bi-mic-fill"></i> Micrófonos
                         </a>
                     </div>
-
                 </div>
             </div>
             
-            <div class="content-section" style="background-color: #1c1c1c; padding-top: 80px;">
+            <div class="content-section" style="background-color: #1c1c1c;">
                 <div class="container">
                     <div class="row align-items-center">
                         <div class="col-lg-6">
@@ -277,7 +314,7 @@
         <section id="content-amplificadores" class="page-section content-section d-none">
             <div class="container">
                 <div class="text-center mb-5">
-                    <h2 class="seccion-titulo">🔊 Amplificadores de Sonido</h2>
+                    <h2 class="seccion-titulo"><i class="bi bi-volume-up-fill"></i> Amplificadores de Sonido</h2>
                 </div>
                 <div class="row">
                     <div class="col-lg-4 col-md-6 mb-4">
@@ -285,55 +322,43 @@
                             <img src="amplificador1.jpg" class="card-img-top" alt="Amplificador 1">
                             <div class="card-body">
                                 <h5 class="card-title">Amplificador XT-5000</h5>
-                                <p class="card-text">Potencia y fidelidad. 5000W RMS. Ideal para conciertos y eventos masivos.</p>
+                                <p class="card-text">Potencia y fidelidad. 5000W RMS.</p>
                             </div>
                             <div class="card-footer text-center">
                                 <a href="#" class="btn btn-primary">Ver detalles</a>
                             </div>
                         </div>
                     </div>
-                    <div class="col-lg-4 col-md-6 mb-4">
-                        <div class="card h-100">
-                            <img src="amplificador2.jpg" class="card-img-top" alt="Amplificador 2">
-                            <div class="card-body">
-                                <h5 class="card-title">Studio Amp A-100</h5>
-                                <p class="card-text">Amplificador de monitoreo para estudio. Cero distorsión y respuesta plana.</p>
-                            </div>
-                            <div class="card-footer text-center">
-                                <a href="#" class="btn btn-primary">Ver detalles</a>
-                            </div>
-                        </div>
-                    </div>
-                    </div>
+                </div>
             </div>
         </section>
 
         <section id="content-iluminacion" class="page-section content-section d-none">
             <div class="container">
                 <div class="text-center mb-5">
-                    <h2 class="seccion-titulo">💡 Iluminación Profesional</h2>
+                    <h2 class="seccion-titulo"><i class="bi bi-lightbulb-fill"></i> Iluminación Profesional</h2>
                 </div>
                 <div class="row">
                     <div class="col-lg-4 col-md-6 mb-4">
                         <div class="card h-100">
-                            <img src="luz1.jpg" class="card-img-top" alt="Luz Beam 1">
+                            <img src="luz1.jpg" class="card-img-top" alt="Luz 1">
                             <div class="card-body">
                                 <h5 class="card-title">Beam 7R Pro</h5>
-                                <p class="card-text">Cabeza móvil 7R de alta velocidad y precisión. 16 prismas y gobos intercambiables.</p>
+                                <p class="card-text">Cabeza móvil 7R de alta velocidad.</p>
                             </div>
                             <div class="card-footer text-center">
                                 <a href="#" class="btn btn-primary">Ver detalles</a>
                             </div>
                         </div>
                     </div>
-                    </div>
+                </div>
             </div>
         </section>
 
         <section id="content-pantallas" class="page-section content-section d-none">
             <div class="container">
                 <div class="text-center mb-5">
-                    <h2 class="seccion-titulo">📺 Pantallas LED'S</h2>
+                    <h2 class="seccion-titulo"><i class="bi bi-display-fill"></i> Pantallas LED'S</h2>
                 </div>
                 <div class="row">
                     <div class="col-lg-4 col-md-6 mb-4">
@@ -341,56 +366,80 @@
                             <img src="pantalla1.jpg" class="card-img-top" alt="Pantalla LED">
                             <div class="card-body">
                                 <h5 class="card-title">Módulo LED P3.9 Interior</h5>
-                                <p class="card-text">Panel de 50x50cm, pitch 3.9mm para alta resolución en interiores.</p>
+                                <p class="card-text">Panel de 50x50cm, pitch 3.9mm.</p>
                             </div>
                             <div class="card-footer text-center">
                                 <a href="#" class="btn btn-primary">Ver detalles</a>
                             </div>
                         </div>
                     </div>
-                    </div>
+                </div>
             </div>
         </section>
 
         <section id="content-microfonos" class="page-section content-section d-none">
             <div class="container">
                 <div class="text-center mb-5">
-                    <h2 class="seccion-titulo">🎤 Micrófonos</h2>
+                    <h2 class="seccion-titulo"><i class="bi bi-mic-fill"></i> Micrófonos</h2>
                 </div>
                 <div class="row">
                     <div class="col-lg-4 col-md-6 mb-4">
                         <div class="card h-100">
-                            <img src="microfono1.jpg" class="card-img-top" alt="MicróFono 1">
+                            <img src="microfono1.jpg" class="card-img-top" alt="Micrófono">
                             <div class="card-body">
                                 <h5 class="card-title">Condensador C-414</h5>
-                                <p class="card-text">Micrófono de condensador de diafragma grande. Perfecto para voces de estudio.</p>
+                                <p class="card-text">Perfecto para voces de estudio.</p>
                             </div>
                             <div class="card-footer text-center">
                                 <a href="#" class="btn btn-primary">Ver detalles</a>
                             </div>
                         </div>
                     </div>
-                    <div class="col-lg-4 col-md-6 mb-4">
-                        <div class="card h-100">
-                            <img src="microfono2.jpg" class="card-img-top" alt="Micrófono 2">
-                            <div class="card-body">
-                                <h5 class="card-title">Dinámico Vocal DM-58</h5>
-                                <p class="card-text">El estándar de la industria para voces en vivo. Patrón polar cardioide.</p>
-                            </div>
-                            <div class="card-footer text-center">
-                                <a href="#" class="btn btn-primary">Ver detalles</a>
-                            </div>
-                        </div>
-                    </div>
-                    </div>
+                </div>
             </div>
         </section>
 
 
+        <section id="content-testimonios" class="page-section content-section d-none">
+            <div class="container">
+                <div class="text-center mb-5">
+                    <h2 class="seccion-titulo"><i class="bi bi-chat-quote-fill"></i> Testimonios</h2>
+                </div>
+                <div class="row justify-content-center">
+                    <div class="col-lg-6 mb-4">
+                        <div class="testimonial-card">
+                            <p class="testimonio-texto">
+                                "El servicio de AmShop fue increíble. Rentamos las pantallas LED y la iluminación para nuestro tour y la calidad fue de primer nivel. ¡Totalmente recomendados!"
+                            </p>
+                            <p class="client-name">- Juan P.</p>
+                            <p class="client-title">Manager, Banda "Los Eléctricos"</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 mb-4">
+                        <div class="testimonial-card">
+                            <p class="testimonio-texto">
+                                "Como DJ, la fidelidad del audio lo es todo. Los amplificadores que compré aquí tienen una potencia limpia y sin distorsión. Mi set nunca había sonado mejor."
+                            </p>
+                            <p class="client-name">- DJ Spectra</p>
+                            <p class="client-title">Productor y DJ Profesional</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 mb-4">
+                        <div class="testimonial-card">
+                            <p class="testimonio-texto">
+                                "Organizamos conferencias para más de 500 personas. Los micrófonos y el sistema de audio de AmShop son 100% fiables. Cero fallas, soporte técnico excelente."
+                            </p>
+                            <p class="client-name">- María F.</p>
+                            <p class="client-title">Directora, Eventos Corporativos ACME</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
         <section id="content-contacto" class="page-section content-section d-none">
             <div class="container">
                 <div class="text-center mb-5">
-                    <h2 class="seccion-titulo">📞 Contáctanos</h2>
+                    <h2 class="seccion-titulo"><i class="bi bi-telephone-fill"></i> Contáctanos</h2>
                 </div>
                 <div class="row justify-content-center">
                     <div class="col-lg-8">
@@ -421,9 +470,7 @@
                 </div>
             </div>
         </section>
-
-
-    </main>
+        </main>
 
     <footer class="text-center p-4" style="background-color: #1c1c1c;">
         <p class="mb-0">AmShop © 2025 - Todos los derechos reservados.</p>
