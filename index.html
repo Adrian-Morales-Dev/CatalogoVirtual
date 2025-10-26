@@ -9,6 +9,8 @@
           rel="stylesheet" 
           integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" 
           crossorigin="anonymous">
+          
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -74,6 +76,7 @@
             border-color: #00BFFF;
             color: #121212;
             transition: all 0.3s ease;
+            margin: 0.5rem; /* Espacio entre los botones */
         }
         .btn-cta:hover {
             background-color: #fff;
@@ -81,12 +84,18 @@
             border-color: #fff;
             transform: scale(1.05);
         }
+        
+        /* 1. Título "Nuestro Catálogo" en Inicio */
+        .catalogo-titulo-inicio {
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 700;
+            font-size: 2rem;
+            color: #fff;
+            margin-bottom: 1.5rem;
+        }
 
         /* --- Contenido de la Página (Misión, etc.) --- */
-        
-        /* 2. ARREGLO DE PADDING SUPERIOR (para título) */
         .content-section {
-            /* Añadido padding-top para dejar espacio para la navbar fija */
             padding-top: 120px; 
             padding-bottom: 80px;
         }
@@ -139,6 +148,18 @@
             padding-bottom: 10px;
             display: inline-block;
         }
+        
+        /* 2. Estilos para la nueva sección de Contacto */
+        .contact-info-item {
+            font-size: 1.1rem;
+            margin-bottom: 1.5rem;
+        }
+        .contact-info-item i { /* Estilo para los iconos */
+            color: #00BFFF; /* Color de acento */
+            font-size: 1.5rem;
+            margin-right: 15px;
+            width: 30px; /* Alinea el texto verticalmente */
+        }
 
         /* ARREGLO PARA MÓVILES */
         @media (max-width: 768px) {
@@ -149,13 +170,17 @@
                 font-size: 1.2rem;
             }
             
-            /* 2. ARREGLO DE PADDING SUPERIOR (para móvil) */
             .content-section {
-                /* Padding aumentado en móviles para ver el título */
                 padding-top: 100px; 
                 padding-left: 15px;
                 padding-right: 15px;
                 padding-bottom: 40px;
+            }
+            
+            /* Para que los botones del catálogo se apilen bien en móvil */
+            .hero-button-group .btn-cta {
+                width: 90%; /* Ocupan casi todo el ancho */
+                margin: 0.5rem auto;
             }
         }
 
@@ -186,6 +211,9 @@
                     <li class="nav-item">
                         <a class="nav-link" href="#" onclick="showSection('content-microfonos', this)">Micrófonos</a>
                     </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#" onclick="showSection('content-contacto', this)">Contáctanos</a>
+                    </li>
                 </ul>
             </div>
         </div>
@@ -202,26 +230,26 @@
                         Equipamiento profesional para eventos que no solo se escuchan, se sienten.
                         Potencia, claridad e iluminación que transforman espacios.
                     </p>
-                    <a href="#" class="btn btn-cta" onclick="showSection('content-amplificadores', document.querySelector('.nav-link[onclick*=\'content-amplificadores\']'))">
-                        Ver Catálogo (Amplificadores)
-                    </a>
 
-                    <div class="hero-nav-buttons mt-4">
-                        <p class="text-light mb-2">O ir directamente a:</p>
-                        <a href="#" class="btn btn-outline-light btn-sm m-1" onclick="showSection('content-iluminacion', document.querySelector('.nav-link[onclick*=\'content-iluminacion\']'))">
+                    <h2 class="catalogo-titulo-inicio mt-5">Nuestro Catálogo</h2>
+                    <div class="hero-button-group">
+                        <a href="#" class="btn btn-cta" onclick="showSection('content-amplificadores', document.querySelector('.nav-link[onclick*=\'content-amplificadores\']'))">
+                            🔊 Amplificadores
+                        </a>
+                        <a href="#" class="btn btn-cta" onclick="showSection('content-iluminacion', document.querySelector('.nav-link[onclick*=\'content-iluminacion\']'))">
                             💡 Iluminación
                         </a>
-                        <a href="#" class="btn btn-outline-light btn-sm m-1" onclick="showSection('content-pantallas', document.querySelector('.nav-link[onclick*=\'content-pantallas\']'))">
+                        <a href="#" class="btn btn-cta" onclick="showSection('content-pantallas', document.querySelector('.nav-link[onclick*=\'content-pantallas\']'))">
                             📺 Pantallas LED'S
                         </a>
-                        <a href="#" class="btn btn-outline-light btn-sm m-1" onclick="showSection('content-microfonos', document.querySelector('.nav-link[onclick*=\'content-microfonos\']'))">
+                        <a href="#" class="btn btn-cta" onclick="showSection('content-microfonos', document.querySelector('.nav-link[onclick*=\'content-microfonos\']'))">
                             🎤 Micrófonos
                         </a>
                     </div>
                     </div>
             </div>
             
-            <div class="content-section" style="background-color: #1c1c1c;">
+            <div class="content-section" style="background-color: #1c1c1c; padding-top: 80px;">
                 <div class="container">
                     <div class="row align-items-center">
                         <div class="col-lg-6">
@@ -254,14 +282,7 @@
                     <h2 class="seccion-titulo">🔊 Amplificadores de Sonido</h2>
                 </div>
                 <div class="row">
-                    <div class="col-lg-4 col-md-6 mb-4">
-                        <div class="card h-100">
-                            <img src="amplificador1.jpg" class="card-img-top" alt="Amplificador 1">
-                            <div class="card-body"><h5 class="card-title">Amplificador XT-5000</h5><p class="card-text">Potencia y fidelidad. 5000W RMS.</p></div>
-                            <div class="card-footer text-center"><a href="#" class="btn btn-primary">Ver detalles</a></div>
-                        </div>
                     </div>
-                </div>
             </div>
         </section>
 
@@ -271,14 +292,7 @@
                     <h2 class="seccion-titulo">💡 Iluminación Profesional</h2>
                 </div>
                 <div class="row">
-                    <div class="col-lg-4 col-md-6 mb-4">
-                        <div class="card h-100">
-                            <img src="luz1.jpg" class="card-img-top" alt="Luz Beam 1">
-                            <div class="card-body"><h5 class="card-title">Beam 7R Pro</h5><p class="card-text">Cabeza móvil 7R de alta velocidad y precisión.</p></div>
-                            <div class="card-footer text-center"><a href="#" class="btn btn-primary">Ver detalles</a></div>
-                        </div>
                     </div>
-                </div>
             </div>
         </section>
 
@@ -288,35 +302,56 @@
                     <h2 class="seccion-titulo">📺 Pantallas LED'S</h2>
                 </div>
                 <div class="row">
-                    <div class="col-lg-4 col-md-6 mb-4">
-                        <div class="card h-100">
-                            <img src="pantalla1.jpg" class="card-img-top" alt="Pantalla LED">
-                            <div class="card-body"><h5 class="card-title">Módulo LED P3.9 Interior</h5><p class="card-text">Panel de 50x50cm, pitch 3.9mm para alta resolución.</p></div>
-                            <div class="card-footer text-center"><a href="#" class="btn btn-primary">Ver detalles</a></div>
-                        </div>
                     </div>
-                </div>
             </div>
         </section>
 
         <section id="content-microfonos" class="page-section content-section d-none">
-            <div class="container"> 
+            <div class="container">
                 <div class="text-center mb-5">
                     <h2 class="seccion-titulo">🎤 Micrófonos</h2>
                 </div>
                 <div class="row">
-                    <div class="col-lg-4 col-md-6 mb-4">
-                        <div class="card h-100">
-                            <img src="microfono1.jpg" class="card-img-top" alt="Micrófono 1">
-                            <div class="card-body"><h5 class="card-title">Condensador C-414</h5><p class="card-text">Perfecto para voces de estudio y overheads.</p></div>
-                            <div class="card-footer text-center"><a href="#" class="btn btn-primary">Ver detalles</a></div>
+                    </div>
+            </div>
+        </section>
+
+
+        <section id="content-contacto" class="page-section content-section d-none">
+            <div class="container">
+                <div class="text-center mb-5">
+                    <h2 class="seccion-titulo">📞 Contáctanos</h2>
+                </div>
+                <div class="row justify-content-center">
+                    <div class="col-lg-8">
+                        <p class="lead text-center mb-5">
+                            ¿Listo para tu próximo evento? ¡Contáctanos! Estamos aquí para ayudarte a elegir el equipo perfecto.
+                        </p>
+                        <div style="background-color: #1c1c1c; padding: 30px; border-radius: 10px;">
+                            <div class="contact-info-item d-flex align-items-center">
+                                <i class="bi bi-telephone-fill"></i>
+                                <span>+52 55 1234 5678 (WhatsApp y Llamadas)</span>
+                            </div>
+                            <div class="contact-info-item d-flex align-items-center">
+                                <i class="bi bi-envelope-fill"></i>
+                                <span>ventas@amshop.com</span>
+                            </div>
+                            <div class="contact-info-item d-flex align-items-center">
+                                <i class="bi bi-geo-alt-fill"></i>
+                                <span>Av. Siempre Viva 123, Col. Centro, Ciudad de México</span>
+                            </div>
+                            
+                            <hr class="my-4" style="border-color: #555;">
+                            
+                            <h4 class="text-center mb-3" style="color: #00BFFF;">Horario de Atención</h4>
+                            <p class="text-center mb-0">Lunes a Viernes: 9:00 AM - 6:00 PM</p>
+                            <p class="text-center">Sábado: 10:00 AM - 2:00 PM</p>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
-
-    </main>
+        </main>
 
     <footer class="text-center p-4" style="background-color: #1c1c1c;">
         <p class="mb-0">AmShop © 2025 - Todos los derechos reservados.</p>
@@ -349,7 +384,7 @@
                 clickedLink.classList.add('active');
             }
 
-            // --- ¡ARREGLO PARA QUE EL MENÚ MÓVIL SE CIERRE SOLO! ---
+            // Arreglo para que el menú móvil se cierre solo
             const navMenu = document.getElementById('navbarNav');
             if (navMenu.classList.contains('show')) {
                 const bsCollapse = new bootstrap.Collapse(navMenu, {
@@ -357,7 +392,6 @@
                 });
                 bsCollapse.hide();
             }
-            // --- FIN DEL ARREGLO ---
         }
     </script>
 </body>
