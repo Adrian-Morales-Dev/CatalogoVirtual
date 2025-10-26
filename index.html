@@ -31,7 +31,6 @@
         .navbar {
             background-color: rgba(0, 0, 0, 0.8);
             backdrop-filter: blur(10px);
-            /* 2. Barra más grande (padding aumentado) */
             padding-top: 1rem;
             padding-bottom: 1rem;
         }
@@ -84,8 +83,12 @@
         }
 
         /* --- Contenido de la Página (Misión, etc.) --- */
+        
+        /* 2. ARREGLO DE PADDING SUPERIOR (para título) */
         .content-section {
-            padding: 80px 0;
+            /* Añadido padding-top para dejar espacio para la navbar fija */
+            padding-top: 120px; 
+            padding-bottom: 80px;
         }
         
         .mision-vision-box {
@@ -137,16 +140,22 @@
             display: inline-block;
         }
 
-        /* 3. ARREGLO PARA MÓVILES */
+        /* ARREGLO PARA MÓVILES */
         @media (max-width: 768px) {
             .hero-section h1 {
-                font-size: 2.8rem; /* Tamaño de fuente más pequeño para el título H1 en móviles */
+                font-size: 2.8rem;
             }
             .hero-section .lead {
-                font-size: 1.2rem; /* Tamaño de fuente más pequeño para el subtítulo en móviles */
+                font-size: 1.2rem;
             }
+            
+            /* 2. ARREGLO DE PADDING SUPERIOR (para móvil) */
             .content-section {
-                padding: 40px 15px; /* Menos padding en móviles */
+                /* Padding aumentado en móviles para ver el título */
+                padding-top: 100px; 
+                padding-left: 15px;
+                padding-right: 15px;
+                padding-bottom: 40px;
             }
         }
 
@@ -194,9 +203,22 @@
                         Potencia, claridad e iluminación que transforman espacios.
                     </p>
                     <a href="#" class="btn btn-cta" onclick="showSection('content-amplificadores', document.querySelector('.nav-link[onclick*=\'content-amplificadores\']'))">
-                        Ver Catálogo
+                        Ver Catálogo (Amplificadores)
                     </a>
-                </div>
+
+                    <div class="hero-nav-buttons mt-4">
+                        <p class="text-light mb-2">O ir directamente a:</p>
+                        <a href="#" class="btn btn-outline-light btn-sm m-1" onclick="showSection('content-iluminacion', document.querySelector('.nav-link[onclick*=\'content-iluminacion\']'))">
+                            💡 Iluminación
+                        </a>
+                        <a href="#" class="btn btn-outline-light btn-sm m-1" onclick="showSection('content-pantallas', document.querySelector('.nav-link[onclick*=\'content-pantallas\']'))">
+                            📺 Pantallas LED'S
+                        </a>
+                        <a href="#" class="btn btn-outline-light btn-sm m-1" onclick="showSection('content-microfonos', document.querySelector('.nav-link[onclick*=\'content-microfonos\']'))">
+                            🎤 Micrófonos
+                        </a>
+                    </div>
+                    </div>
             </div>
             
             <div class="content-section" style="background-color: #1c1c1c;">
@@ -278,7 +300,8 @@
         </section>
 
         <section id="content-microfonos" class="page-section content-section d-none">
-            <div classs="container"> <div class="text-center mb-5">
+            <div class="container"> 
+                <div class="text-center mb-5">
                     <h2 class="seccion-titulo">🎤 Micrófonos</h2>
                 </div>
                 <div class="row">
@@ -326,21 +349,16 @@
                 clickedLink.classList.add('active');
             }
 
-            // --- ¡AQUÍ ESTÁ EL ARREGLO PARA EL MENÚ MÓVIL! ---
-            // Busca el menú de navegación
+            // --- ¡ARREGLO PARA QUE EL MENÚ MÓVIL SE CIERRE SOLO! ---
             const navMenu = document.getElementById('navbarNav');
-
-            // Revisa si el menú está abierto (visible en móvil, clase '.show')
             if (navMenu.classList.contains('show')) {
-                // Crea una instancia del "collapse" de Bootstrap
                 const bsCollapse = new bootstrap.Collapse(navMenu, {
-                    toggle: false // para no abrir/cerrar, solo usar el método .hide()
+                    toggle: false 
                 });
-                // Esconde (cierra) el menú
                 bsCollapse.hide();
             }
             // --- FIN DEL ARREGLO ---
         }
     </script>
-    </body>
+</body>
 </html>
