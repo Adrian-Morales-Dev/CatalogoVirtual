@@ -43,7 +43,7 @@
 
         /* --- Sección Héroe (Inicio) --- */
         .hero-section {
-            background: linear-gradient(rgba(18, 18, 18, 0.85), rgba(18, 18, 18, 0.85)), url('https://images.unsplash.com/photo-1511379938547-c1f69419868d?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwyODE1MDl8MHwxfGFsbHx8fHx8fHx8fDE2NzQwOTE1OTk&ixlib.rb-4.0.3&q=80&w=1920');
+            background: linear-gradient(rgba(18, 18, 18, 0.85), rgba(18, 18, 18, 0.85)), url('https://images.unsplash.com/photo-1511379938547-c1f69419868d?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwyODE1MDl8MHwxfGFsbHx8fHx8fHx8fDE2NzQwOTE1OTk&ixlib=rb-4.0.3&q=80&w=1920');
             background-size: cover;
             background-position: center center;
             height: 100vh;
@@ -95,6 +95,7 @@
 
         /* --- Contenido de la Página (Misión, etc.) --- */
         .content-section {
+            /* Padding para las secciones de PRODUCTOS (para librar la navbar) */
             padding-top: 120px; 
             padding-bottom: 80px;
         }
@@ -147,7 +148,6 @@
             padding-bottom: 10px;
             display: inline-block;
         }
-        /* Iconos en los títulos */
         .seccion-titulo i {
             color: #00BFFF;
             margin-right: 10px;
@@ -165,14 +165,14 @@
             width: 30px;
         }
         
-        /* --- 2. NUEVOS ESTILOS PARA TESTIMONIOS --- */
+        /* --- Testimonios --- */
         .testimonial-card {
             background-color: #1c1c1c;
             border-left: 5px solid #00BFFF;
             padding: 30px;
             border-radius: 10px;
             margin-bottom: 20px;
-            height: 100%; /* Para alinear tarjetas */
+            height: 100%;
         }
         .testimonial-card p.testimonio-texto {
             font-size: 1.1rem;
@@ -191,7 +191,6 @@
             font-size: 0.9rem;
             color: #aaa;
         }
-        /* --- FIN DE ESTILOS DE TESTIMONIOS --- */
 
 
         /* ARREGLO PARA MÓVILES */
@@ -204,6 +203,7 @@
             }
             
             .content-section {
+                /* Padding más pequeño en móvil para las secciones de producto */
                 padding-top: 100px; 
                 padding-left: 15px;
                 padding-right: 15px;
@@ -260,7 +260,7 @@
             
             <div class="hero-section">
                 <div class="container">
-                    <h1>EL SONIDO DE LA PERFECCIÓN</h1>
+                    <h1>CATÁLOGO VIRTUAL</h1>
                     <p class="lead">
                         Equipamiento profesional para eventos que no solo se escuchan, se sienten.
                         Potencia, claridad e iluminación que transforman espacios.
@@ -284,7 +284,7 @@
                 </div>
             </div>
             
-            <div class="content-section" style="background-color: #1c1c1c;">
+            <div class="content-section" style="background-color: #1c1c1c; padding-top: 80px;">
                 <div class="container">
                     <div class="row align-items-center">
                         <div class="col-lg-6">
@@ -436,6 +436,7 @@
                 </div>
             </div>
         </section>
+
         <section id="content-contacto" class="page-section content-section d-none">
             <div class="container">
                 <div class="text-center mb-5">
@@ -470,7 +471,9 @@
                 </div>
             </div>
         </section>
-        </main>
+
+
+    </main>
 
     <footer class="text-center p-4" style="background-color: #1c1c1c;">
         <p class="mb-0">AmShop © 2025 - Todos los derechos reservados.</p>
