@@ -3,95 +3,256 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mi Catálogo Virtual</title>
-    
+    <title>AudioPro - Catálogo Virtual</title>
+
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" 
           rel="stylesheet" 
           integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" 
           crossorigin="anonymous">
-    
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Roboto:wght@400;500&display=swap" 
+          rel="stylesheet">
+
     <style>
-        body {
-            background-color: #f8f9fa; /* Un fondo gris claro */
+        html {
+            scroll-behavior: smooth; /* Para que los saltos del menú sean suaves */
         }
+
+        body {
+            background-color: #121212; /* Fondo principal oscuro */
+            color: #f8f9fa; /* Texto principal claro */
+            font-family: 'Roboto', sans-serif; /* Fuente para el cuerpo */
+        }
+
+        /* --- Barra de Navegación --- */
+        .navbar {
+            background-color: rgba(0, 0, 0, 0.8); /* Fondo negro semi-transparente */
+            backdrop-filter: blur(10px); /* Efecto "vidrio esmerilado" */
+        }
+
+        .navbar-brand, .nav-link {
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 700;
+        }
+
+        /* --- Sección Héroe (Misión/Visión) --- */
+        .hero-section {
+            background: linear-gradient(rgba(18, 18, 18, 0.8), rgba(18, 18, 18, 0.8)), url('https://images.unsplash.com/photo-1511379938547-c1f69419868d?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwyODE1MDl8MHwxfGFsbHx8fHx8fHx8fDE2NzQwOTE1OTk&ixlib=rb-4.0.3&q=80&w=1920');
+            background-size: cover;
+            background-position: center center;
+            padding: 100px 0;
+            color: #fff;
+            text-align: center;
+        }
+
+        .hero-section h1 {
+            font-family: 'Montserrat', sans-serif;
+            font-size: 3.5rem;
+            font-weight: 700;
+            color: #00BFFF; /* Un azul eléctrico como acento */
+        }
+
+        .mision-vision {
+            background-color: #1c1c1c; /* Fondo un poco más claro */
+            padding: 40px;
+            border-radius: 15px;
+            max-width: 800px;
+            margin: 30px auto 0 auto;
+            border-left: 5px solid #00BFFF;
+        }
+
+        /* --- Estilo de Tarjetas de Producto --- */
+        .card {
+            background-color: #1c1c1c; /* Fondo de tarjeta oscuro */
+            border: 1px solid #333; /* Borde sutil */
+            color: #f8f9fa;
+            transition: transform 0.2s, box-shadow 0.2s;
+            border-radius: 10px; /* Bordes redondeados */
+        }
+
+        .card:hover {
+            transform: translateY(-5px); /* Efecto de elevación */
+            box-shadow: 0 8px 20px rgba(0, 191, 255, 0.2); /* Sombra de color acento */
+        }
+
         .card-img-top {
             width: 100%;
-            height: 200px; /* Altura fija para las imágenes */
-            object-fit: cover; /* Asegura que la imagen cubra el espacio sin distorsionarse */
+            height: 200px;
+            object-fit: cover;
+            border-top-left-radius: 10px;
+            border-top-right-radius: 10px;
         }
-        .card {
-            box-shadow: 0 4px 8px rgba(0,0,0,0.1); /* Sombra suave */
-            transition: transform 0.2s; /* Animación ligera */
+
+        .card-title {
+            font-family: 'Montserrat', sans-serif;
+            color: #00BFFF; /* Título de tarjeta con color acento */
         }
-        .card:hover {
-            transform: scale(1.03); /* Efecto de zoom al pasar el mouse */
+        
+        .btn-primary {
+            background-color: #00BFFF;
+            border-color: #00BFFF;
+            font-weight: 500;
+        }
+        .btn-primary:hover {
+            background-color: #009acd;
+            border-color: #009acd;
+        }
+
+        /* --- Títulos de Sección --- */
+        .seccion-titulo {
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 700;
+            color: #fff;
+            border-bottom: 3px solid #00BFFF;
+            padding-bottom: 10px;
+            display: inline-block; /* Para que el borde se ajuste al texto */
         }
     </style>
 </head>
-<body>
+<body data-bs-spy="scroll" data-bs-target="#navbarPrincipal" data-bs-offset="100">
 
-    <div class="container my-5 text-center">
-        <h1 class="display-4">📦 Mi Catálogo de Productos</h1>
-        <p class="lead">Aquí puedes ver todos los productos disponibles.</p>
-    </div>
+    <nav id="navbarPrincipal" class="navbar navbar-expand-lg navbar-dark fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="#inicio">AUDIO-PRO</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#inicio">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#amplificadores">Amplificadores</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#luces">Luces Beam</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#microfonos">Micrófonos</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
 
-    <div class="container">
-        <div class="row">
+    <section id="inicio" class="hero-section">
+        <div class="container">
+            <h1>AUDIO-PRO</h1>
+            <p class="lead fs-4">Tu solución integral en audio e iluminación profesional</p>
 
-            <div class="col-lg-4 col-md-6 mb-4">
-                <div class="card h-100">
-                    <img src="prueba1.jpg" 
-                         class="card-img-top" 
-                         alt="Descripción de la imagen">
-                    <div class="card-body">
-                        <h5 class="card-title">Producto 1</h5>
-                        <p class="card-text">
-                            Una breve descripción del producto. 
-                            Puede incluir características principales o materiales.
-                        </p>
-                    </div>
-                    <div class="card-footer text-center">
-                        <a href="#" class="btn btn-primary">Ver detalles</a>
+            <div class="mision-vision">
+                <h2>Nuestra Misión</h2>
+                <p class="lead">Proveer a nuestros clientes con el equipo de audio e iluminación de la más alta calidad, garantizando eventos inolvidables y experiencias sonoras inigualables, a través de tecnología de punta y un servicio al cliente excepcional.</p>
+                
+                <h2 class="mt-4">Nuestra Visión</h2>
+                <p class="lead">Ser la empresa líder y de referencia en el mercado de equipamiento profesional para espectáculos en vivo, reconocida por nuestra innovación, fiabilidad y compromiso con el éxito de nuestros clientes.</p>
+            </div>
+        </div>
+    </section>
+
+
+    <div class="container mt-5 pt-5">
+
+        <section id="amplificadores" class="mb-5">
+            <div class="text-center mb-4">
+                <h2 class="seccion-titulo">🔊 Amplificadores de Sonido</h2>
+            </div>
+            
+            <div class="row">
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="card h-100">
+                        <img src="amplificador1.jpg" class="card-img-top" alt="Amplificador 1">
+                        <div class="card-body">
+                            <h5 class="card-title">Amplificador XT-5000</h5>
+                            <p class="card-text">Potencia y fidelidad. Ideal para conciertos y eventos masivos. 5000W RMS.</p>
+                        </div>
+                        <div class="card-footer text-center">
+                            <a href="#" class="btn btn-primary">Ver detalles</a>
+                        </div>
                     </div>
                 </div>
-            </div>
-            <div class="col-lg-4 col-md-6 mb-4">
-                <div class="card h-100">
-                    <img src="prueba2.jpg" 
-                         class="card-img-top" 
-                         alt="Descripción de la imagen">
-                    <div class="card-body">
-                        <h5 class="card-title">Producto 2</h5>
-                        <p class="card-text">
-                            Descripción del segundo artículo. 
-                            Bootstrap se encargará de que se vean bien en cualquier dispositivo.
-                        </p>
-                    </div>
-                    <div class="card-footer text-center">
-                        <a href="#" class="btn btn-primary">Comprar ahora</a>
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="card h-100">
+                        <img src="amplificador2.jpg" class="card-img-top" alt="Amplificador 2">
+                        <div class="card-body">
+                            <h5 class="card-title">Studio Amp A-100</h5>
+                            <p class="card-text">Amplificador de monitoreo para estudio. Cero distorsión y respuesta plana.</p>
+                        </div>
+                        <div class="card-footer text-center">
+                            <a href="#" class="btn btn-primary">Ver detalles</a>
+                        </div>
                     </div>
                 </div>
+                </div>
+        </section>
+
+
+        <section id="luces" class="mb-5">
+            <div class="text-center mb-4">
+                <h2 class="seccion-titulo">💡 Luces Beam</h2>
             </div>
-            <div class="col-lg-4 col-md-6 mb-4">
-                <div class="card h-100">
-                    <img src="prueba3.jpg" 
-                         class="card-img-top" 
-                         alt="Descripción de la imagen">
-                    <div class="card-body">
-                        <h5 class="card-title">Producto 3</h5>
-                        <p class="card-text">
-                            Puedes copiar y pegar este bloque 
-                            (desde "INICIO DE UN PRODUCTO" hasta "FIN DE UN PRODUCTO") 
-                            para agregar más artículos.
-                        </p>
-                    </div>
-                    <div class="card-footer text-center">
-                        <a href="#" class="btn btn-secondary">Más información</a>
+            
+            <div class="row">
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="card h-100">
+                        <img src="luz1.jpg" class="card-img-top" alt="Luz Beam 1">
+                        <div class="card-body">
+                            <h5 class="card-title">Beam 7R Pro</h5>
+                            <p class="card-text">Cabeza móvil 7R de alta velocidad y precisión. 16 prismas y gobos intercambiables.</p>
+                        </div>
+                        <div class="card-footer text-center">
+                            <a href="#" class="btn btn-primary">Ver detalles</a>
+                        </div>
                     </div>
                 </div>
+                </div>
+        </section>
+
+
+        <section id="microfonos" class="mb-5">
+            <div class="text-center mb-4">
+                <h2 class="seccion-titulo">🎤 Micrófonos</h2>
             </div>
-            </div> </div> <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" 
+            
+            <div class="row">
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="card h-100">
+                        <img src="microfono1.jpg" class="card-img-top" alt="Micrófono 1">
+                        <div class="card-body">
+                            <h5 class="card-title">Condensador C-414</h5>
+                            <p class="card-text">Micrófono de condensador de diafragma grande. Perfecto para voces de estudio y overheads.</p>
+                        </div>
+                        <div class="card-footer text-center">
+                            <a href="#" class="btn btn-primary">Ver detalles</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="card h-100">
+                        <img src="microfono2.jpg" class="card-img-top" alt="Micrófono 2">
+                        <div class="card-body">
+                            <h5 class="card-title">Dinámico Vocal DM-58</h5>
+                            <p class="card-text">El estándar de la industria para voces en vivo. Patrón polar cardioide que rechaza el ruido.</p>
+                        </div>
+                        <div class="card-footer text-center">
+                            <a href="#" class="btn btn-primary">Ver detalles</a>
+                        </div>
+                    </div>
+                </div>
+                </div>
+        </section>
+
+    </div> <footer class="text-center p-4 mt-5" style="background-color: #1c1c1c;">
+        <p class="mb-0">Audio-Pro © 2025 - Todos los derechos reservados.</p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" 
             integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" 
             crossorigin="anonymous"></script>
+</body>
+</html>
 </body>
 </html>
