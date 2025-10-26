@@ -12,71 +12,101 @@
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Roboto:wght@400;500&display=swap" 
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700;900&family=Roboto:wght@400;500&display=swap" 
           rel="stylesheet">
 
     <style>
-        html {
-            scroll-behavior: smooth; /* Para que los saltos del menú sean suaves */
+        body {
+            background-color: #121212;
+            color: #f8f9fa;
+            font-family: 'Roboto', sans-serif;
         }
 
-        body {
-            background-color: #121212; /* Fondo principal oscuro */
-            color: #f8f9fa; /* Texto principal claro */
-            font-family: 'Roboto', sans-serif; /* Fuente para el cuerpo */
+        h1, h2, h3, h4, h5, h6, .navbar-brand, .nav-link, .card-title, .hero-section h1 {
+            font-family: 'Montserrat', sans-serif; /* Fuente más gruesa para títulos */
+            font-weight: 700;
         }
 
         /* --- Barra de Navegación --- */
         .navbar {
-            background-color: rgba(0, 0, 0, 0.8); /* Fondo negro semi-transparente */
-            backdrop-filter: blur(10px); /* Efecto "vidrio esmerilado" */
+            background-color: rgba(0, 0, 0, 0.8);
+            backdrop-filter: blur(10px);
+        }
+        /* Estilo para el enlace activo */
+        .nav-link.active {
+            color: #00BFFF !important;
+            border-bottom: 2px solid #00BFFF;
         }
 
-        .navbar-brand, .nav-link {
-            font-family: 'Montserrat', sans-serif;
-            font-weight: 700;
-        }
-
-        /* --- Sección Héroe (Misión/Visión) --- */
+        /* --- Sección Héroe (Inicio) --- */
         .hero-section {
-            background: linear-gradient(rgba(18, 18, 18, 0.8), rgba(18, 18, 18, 0.8)), url('https://images.unsplash.com/photo-1511379938547-c1f69419868d?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwyODE1MDl8MHwxfGFsbHx8fHx8fHx8fDE2NzQwOTE1OTk&ixlib=rb-4.0.3&q=80&w=1920');
+            background: linear-gradient(rgba(18, 18, 18, 0.85), rgba(18, 18, 18, 0.85)), url('https://images.unsplash.com/photo-1511379938547-c1f69419868d?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwyODE1MDl8MHwxfGFsbHx8fHx8fHx8fDE2NzQwOTE1OTk&ixlib=rb-4.0.3&q=80&w=1920');
             background-size: cover;
             background-position: center center;
-            padding: 100px 0;
-            color: #fff;
+            height: 100vh; /* Ocupa toda la altura de la pantalla */
+            display: flex;
+            align-items: center; /* Centrado vertical */
+            justify-content: center; /* Centrado horizontal */
             text-align: center;
         }
 
         .hero-section h1 {
+            font-size: 4.5rem;
+            font-weight: 900;
+            color: #00BFFF;
+            text-shadow: 2px 2px 10px rgba(0,0,0,0.5);
+        }
+        
+        .hero-section .lead {
+            font-size: 1.5rem;
+            max-width: 800px;
+            margin: 15px auto 30px auto;
+        }
+        
+        /* Botón de "Call to Action" */
+        .btn-cta {
             font-family: 'Montserrat', sans-serif;
-            font-size: 3.5rem;
             font-weight: 700;
-            color: #00BFFF; /* Un azul eléctrico como acento */
+            font-size: 1.1rem;
+            padding: 12px 30px;
+            border-radius: 50px; /* Botón "píldora" */
+            background-color: #00BFFF;
+            border-color: #00BFFF;
+            color: #121212;
+            transition: all 0.3s ease;
+        }
+        .btn-cta:hover {
+            background-color: #fff;
+            color: #00BFFF;
+            border-color: #fff;
+            transform: scale(1.05);
         }
 
-        .mision-vision {
-            background-color: #1c1c1c; /* Fondo un poco más claro */
+        /* --- Contenido de la Página (Misión, etc.) --- */
+        .content-section {
+            padding: 80px 0;
+        }
+        
+        .mision-vision-box {
+            background-color: #1c1c1c;
             padding: 40px;
             border-radius: 15px;
-            max-width: 800px;
-            margin: 30px auto 0 auto;
             border-left: 5px solid #00BFFF;
+            margin-top: 40px;
         }
 
         /* --- Estilo de Tarjetas de Producto --- */
         .card {
-            background-color: #1c1c1c; /* Fondo de tarjeta oscuro */
-            border: 1px solid #333; /* Borde sutil */
+            background-color: #1c1c1c;
+            border: 1px solid #333;
             color: #f8f9fa;
             transition: transform 0.2s, box-shadow 0.2s;
-            border-radius: 10px; /* Bordes redondeados */
+            border-radius: 10px;
         }
-
         .card:hover {
-            transform: translateY(-5px); /* Efecto de elevación */
-            box-shadow: 0 8px 20px rgba(0, 191, 255, 0.2); /* Sombra de color acento */
+            transform: translateY(-5px);
+            box-shadow: 0 8px 20px rgba(0, 191, 255, 0.2);
         }
-
         .card-img-top {
             width: 100%;
             height: 200px;
@@ -84,12 +114,9 @@
             border-top-left-radius: 10px;
             border-top-right-radius: 10px;
         }
-
         .card-title {
-            font-family: 'Montserrat', sans-serif;
-            color: #00BFFF; /* Título de tarjeta con color acento */
+            color: #00BFFF;
         }
-        
         .btn-primary {
             background-color: #00BFFF;
             border-color: #00BFFF;
@@ -102,157 +129,193 @@
 
         /* --- Títulos de Sección --- */
         .seccion-titulo {
-            font-family: 'Montserrat', sans-serif;
             font-weight: 700;
             color: #fff;
             border-bottom: 3px solid #00BFFF;
             padding-bottom: 10px;
-            display: inline-block; /* Para que el borde se ajuste al texto */
+            display: inline-block;
         }
     </style>
 </head>
-<body data-bs-spy="scroll" data-bs-target="#navbarPrincipal" data-bs-offset="100">
+<body>
 
     <nav id="navbarPrincipal" class="navbar navbar-expand-lg navbar-dark fixed-top">
         <div class="container">
-            <a class="navbar-brand" href="#inicio">AUDIO-PRO</a>
+            <a class="navbar-brand" href="#" onclick="showSection('content-inicio', this.closest('.nav-item'))">AUDIO-PRO</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav ms-auto">
                     <li class="nav-item">
-                        <a class="nav-link" href="#inicio">Inicio</a>
+                        <a class="nav-link active" href="#" onclick="showSection('content-inicio', this)">Inicio</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#amplificadores">Amplificadores</a>
+                        <a class="nav-link" href="#" onclick="showSection('content-amplificadores', this)">Amplificadores</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#luces">Luces Beam</a>
+                        <a class="nav-link" href="#" onclick="showSection('content-iluminacion', this)">Iluminación</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#microfonos">Micrófonos</a>
+                        <a class="nav-link" href="#" onclick="showSection('content-pantallas', this)">Pantallas LED'S</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#" onclick="showSection('content-microfonos', this)">Micrófonos</a>
                     </li>
                 </ul>
             </div>
         </div>
     </nav>
 
-    <section id="inicio" class="hero-section">
-        <div class="container">
-            <h1>AUDIO-PRO</h1>
-            <p class="lead fs-4">Tu solución integral en audio e iluminación profesional</p>
+    <main>
 
-            <div class="mision-vision">
-                <h2>Nuestra Misión</h2>
-                <p class="lead">Proveer a nuestros clientes con el equipo de audio e iluminación de la más alta calidad, garantizando eventos inolvidables y experiencias sonoras inigualables, a través de tecnología de punta y un servicio al cliente excepcional.</p>
-                
-                <h2 class="mt-4">Nuestra Visión</h2>
-                <p class="lead">Ser la empresa líder y de referencia en el mercado de equipamiento profesional para espectáculos en vivo, reconocida por nuestra innovación, fiabilidad y compromiso con el éxito de nuestros clientes.</p>
-            </div>
-        </div>
-    </section>
-
-
-    <div class="container mt-5 pt-5">
-
-        <section id="amplificadores" class="mb-5">
-            <div class="text-center mb-4">
-                <h2 class="seccion-titulo">🔊 Amplificadores de Sonido</h2>
+        <section id="content-inicio" class="page-section">
+            
+            <div class="hero-section">
+                <div class="container">
+                    <h1>EL SONIDO DE LA PERFECCIÓN</h1>
+                    <p class="lead">
+                        Equipamiento profesional para eventos que no solo se escuchan, se sienten.
+                        Potencia, claridad e iluminación que transforman espacios.
+                    </p>
+                    <a href="#" class="btn btn-cta" onclick="showSection('content-amplificadores', document.querySelector('.nav-link[onclick*=\'content-amplificadores\']'))">
+                        Ver Catálogo
+                    </a>
+                </div>
             </div>
             
-            <div class="row">
-                <div class="col-lg-4 col-md-6 mb-4">
-                    <div class="card h-100">
-                        <img src="amplificador1.jpg" class="card-img-top" alt="Amplificador 1">
-                        <div class="card-body">
-                            <h5 class="card-title">Amplificador XT-5000</h5>
-                            <p class="card-text">Potencia y fidelidad. Ideal para conciertos y eventos masivos. 5000W RMS.</p>
+            <div class="content-section" style="background-color: #1c1c1c;">
+                <div class="container">
+                    <div class="row align-items-center">
+                        <div class="col-lg-6">
+                            <h2>¿Por Qué AUDIO-PRO?</h2>
+                            <p class="lead">No solo vendemos equipo; creamos experiencias.</p>
+                            <p>Con más de 10 años en la industria, entendemos que cada evento es único. Nuestro compromiso es brindarte la fiabilidad y la potencia que tu producción necesita, con el respaldo de las mejores marcas y un equipo de expertos listos para asesorarte.</p>
+                            <ul>
+                                <li>Equipos 100% probados y garantizados.</li>
+                                <li>Asesoría personalizada para tu proyecto.</li>
+                                <li>El catálogo más completo en un solo lugar.</li>
+                            </ul>
                         </div>
-                        <div class="card-footer text-center">
-                            <a href="#" class="btn btn-primary">Ver detalles</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6 mb-4">
-                    <div class="card h-100">
-                        <img src="amplificador2.jpg" class="card-img-top" alt="Amplificador 2">
-                        <div class="card-body">
-                            <h5 class="card-title">Studio Amp A-100</h5>
-                            <p class="card-text">Amplificador de monitoreo para estudio. Cero distorsión y respuesta plana.</p>
-                        </div>
-                        <div class="card-footer text-center">
-                            <a href="#" class="btn btn-primary">Ver detalles</a>
+                        <div class="col-lg-6">
+                            <div class="mision-vision-box">
+                                <h2>Nuestra Misión</h2>
+                                <p>Proveer a nuestros clientes con el equipo de audio e iluminación de la más alta calidad, garantizando eventos inolvidables y experiencias sonoras inigualables.</p>
+                                <h2 class="mt-4">Nuestra Visión</h2>
+                                <p>Ser la empresa líder y de referencia en el mercado de equipamiento profesional, reconocida por nuestra innovación, fiabilidad y compromiso con el éxito de nuestros clientes.</p>
+                            </div>
                         </div>
                     </div>
                 </div>
-                </div>
-        </section>
-
-
-        <section id="luces" class="mb-5">
-            <div class="text-center mb-4">
-                <h2 class="seccion-titulo">💡 Luces Beam</h2>
             </div>
-            
-            <div class="row">
-                <div class="col-lg-4 col-md-6 mb-4">
-                    <div class="card h-100">
-                        <img src="luz1.jpg" class="card-img-top" alt="Luz Beam 1">
-                        <div class="card-body">
-                            <h5 class="card-title">Beam 7R Pro</h5>
-                            <p class="card-text">Cabeza móvil 7R de alta velocidad y precisión. 16 prismas y gobos intercambiables.</p>
-                        </div>
-                        <div class="card-footer text-center">
-                            <a href="#" class="btn btn-primary">Ver detalles</a>
+        </section>
+
+        <section id="content-amplificadores" class="page-section content-section d-none">
+            <div class="container">
+                <div class="text-center mb-5">
+                    <h2 class="seccion-titulo">🔊 Amplificadores de Sonido</h2>
+                </div>
+                <div class="row">
+                    <div class="col-lg-4 col-md-6 mb-4">
+                        <div class="card h-100">
+                            <img src="amplificador1.jpg" class="card-img-top" alt="Amplificador 1">
+                            <div class="card-body"><h5 class="card-title">Amplificador XT-5000</h5><p class="card-text">Potencia y fidelidad. 5000W RMS.</p></div>
+                            <div class="card-footer text-center"><a href="#" class="btn btn-primary">Ver detalles</a></div>
                         </div>
                     </div>
                 </div>
-                </div>
-        </section>
-
-
-        <section id="microfonos" class="mb-5">
-            <div class="text-center mb-4">
-                <h2 class="seccion-titulo">🎤 Micrófonos</h2>
             </div>
-            
-            <div class="row">
-                <div class="col-lg-4 col-md-6 mb-4">
-                    <div class="card h-100">
-                        <img src="microfono1.jpg" class="card-img-top" alt="Micrófono 1">
-                        <div class="card-body">
-                            <h5 class="card-title">Condensador C-414</h5>
-                            <p class="card-text">Micrófono de condensador de diafragma grande. Perfecto para voces de estudio y overheads.</p>
-                        </div>
-                        <div class="card-footer text-center">
-                            <a href="#" class="btn btn-primary">Ver detalles</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6 mb-4">
-                    <div class="card h-100">
-                        <img src="microfono2.jpg" class="card-img-top" alt="Micrófono 2">
-                        <div class="card-body">
-                            <h5 class="card-title">Dinámico Vocal DM-58</h5>
-                            <p class="card-text">El estándar de la industria para voces en vivo. Patrón polar cardioide que rechaza el ruido.</p>
-                        </div>
-                        <div class="card-footer text-center">
-                            <a href="#" class="btn btn-primary">Ver detalles</a>
-                        </div>
-                    </div>
-                </div>
-                </div>
         </section>
 
-    </div> <footer class="text-center p-4 mt-5" style="background-color: #1c1c1c;">
+        <section id="content-iluminacion" class="page-section content-section d-none">
+            <div class="container">
+                <div class="text-center mb-5">
+                    <h2 class="seccion-titulo">💡 Iluminación Profesional</h2>
+                </div>
+                <div class="row">
+                    <div class="col-lg-4 col-md-6 mb-4">
+                        <div class="card h-100">
+                            <img src="luz1.jpg" class="card-img-top" alt="Luz Beam 1">
+                            <div class="card-body"><h5 class="card-title">Beam 7R Pro</h5><p class="card-text">Cabeza móvil 7R de alta velocidad y precisión.</p></div>
+                            <div class="card-footer text-center"><a href="#" class="btn btn-primary">Ver detalles</a></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="content-pantallas" class="page-section content-section d-none">
+            <div class="container">
+                <div class="text-center mb-5">
+                    <h2 class="seccion-titulo">📺 Pantallas LED'S</h2>
+                </div>
+                <div class="row">
+                    <div class="col-lg-4 col-md-6 mb-4">
+                        <div class="card h-100">
+                            <img src="pantalla1.jpg" class="card-img-top" alt="Pantalla LED">
+                            <div class="card-body"><h5 class="card-title">Módulo LED P3.9 Interior</h5><p class="card-text">Panel de 50x50cm, pitch 3.9mm para alta resolución en interiores.</p></div>
+                            <div class="card-footer text-center"><a href="#" class="btn btn-primary">Ver detalles</a></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="content-microfonos" class="page-section content-section d-none">
+            <div class="container">
+                <div class="text-center mb-5">
+                    <h2 class="seccion-titulo">🎤 Micrófonos</h2>
+                </div>
+                <div class="row">
+                    <div class="col-lg-4 col-md-6 mb-4">
+                        <div class="card h-100">
+                            <img src="microfono1.jpg" class="card-img-top" alt="Micrófono 1">
+                            <div class="card-body"><h5 class="card-title">Condensador C-414</h5><p class="card-text">Perfecto para voces de estudio y overheads.</p></div>
+                            <div class="card-footer text-center"><a href="#" class="btn btn-primary">Ver detalles</a></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="text-center p-4" style="background-color: #1c1c1c;">
         <p class="mb-0">Audio-Pro © 2025 - Todos los derechos reservados.</p>
     </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" 
             integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" 
             crossorigin="anonymous"></script>
-</body>
-</html>
+
+    <script>
+        function showSection(sectionId, clickedLink) {
+            // 1. Ocultar todas las secciones
+            // Obtenemos todas las secciones que tienen la clase 'page-section'
+            const sections = document.querySelectorAll('.page-section');
+            sections.forEach(section => {
+                section.classList.add('d-none'); // 'd-none' es la clase de Bootstrap para "display: none"
+            });
+
+            // 2. Mostrar solo la sección deseada
+            // Quitamos 'd-none' de la sección en la que hicimos clic
+            const activeSection = document.getElementById(sectionId);
+            if (activeSection) {
+                activeSection.classList.remove('d-none');
+            }
+
+            // 3. Actualizar el estado 'active' en la barra de navegación
+            // Primero, quitamos la clase 'active' de todos los enlaces
+            const navLinks = document.querySelectorAll('.nav-link');
+            navLinks.forEach(link => {
+                link.classList.remove('active');
+            });
+
+            // Segundo, añadimos la clase 'active' solo al enlace en el que hicimos clic
+            if (clickedLink) {
+                clickedLink.classList.add('active');
+            }
+        }
+    </script>
 </body>
 </html>
