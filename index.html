@@ -278,8 +278,7 @@
         </section>
 
         <section id="content-microfonos" class="page-section content-section d-none">
-            <div classs="container">
-                <div class="text-center mb-5">
+            <div classs="container"> <div class="text-center mb-5">
                     <h2 class="seccion-titulo">🎤 Micrófonos</h2>
                 </div>
                 <div class="row">
@@ -326,7 +325,22 @@
             if (clickedLink) {
                 clickedLink.classList.add('active');
             }
+
+            // --- ¡AQUÍ ESTÁ EL ARREGLO PARA EL MENÚ MÓVIL! ---
+            // Busca el menú de navegación
+            const navMenu = document.getElementById('navbarNav');
+
+            // Revisa si el menú está abierto (visible en móvil, clase '.show')
+            if (navMenu.classList.contains('show')) {
+                // Crea una instancia del "collapse" de Bootstrap
+                const bsCollapse = new bootstrap.Collapse(navMenu, {
+                    toggle: false // para no abrir/cerrar, solo usar el método .hide()
+                });
+                // Esconde (cierra) el menú
+                bsCollapse.hide();
+            }
+            // --- FIN DEL ARREGLO ---
         }
     </script>
-</body>
+    </body>
 </html>
