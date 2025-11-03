@@ -93,9 +93,8 @@
             margin-bottom: 1.5rem;
         }
 
-        /* --- Contenido de la Página (Misión, etc.) --- */
+        /* --- Contenido de la Página --- */
         .content-section {
-            /* Padding para las secciones de PRODUCTOS (para librar la navbar) */
             padding-top: 120px; 
             padding-bottom: 80px;
         }
@@ -108,7 +107,7 @@
             margin-top: 40px;
         }
 
-        /* --- Estilo de Tarjetas de Producto --- */
+        /* --- Tarjetas de Producto --- */
         .card {
             background-color: #1c1c1c;
             border: 1px solid #333;
@@ -153,7 +152,7 @@
             margin-right: 10px;
         }
         
-        /* --- Sección de Contacto --- */
+        /* --- Contacto --- */
         .contact-info-item {
             font-size: 1.1rem;
             margin-bottom: 1.5rem;
@@ -191,6 +190,25 @@
             font-size: 0.9rem;
             color: #aaa;
         }
+        
+        /* --- Estilos para el Modal --- */
+        .modal-content {
+            background-color: #1c1c1c;
+            color: #f8f9fa;
+            border: 1px solid #333;
+        }
+        .modal-header {
+            border-bottom: 1px solid #333;
+        }
+        .modal-footer {
+            border-top: 1px solid #333;
+        }
+        .modal-body .carousel-inner {
+            border-radius: 10px;
+        }
+        .modal-body .list-unstyled i {
+            color: #00BFFF; /* Color de acento para los checks */
+        }
 
 
         /* ARREGLO PARA MÓVILES */
@@ -203,7 +221,6 @@
             }
             
             .content-section {
-                /* Padding más pequeño en móvil para las secciones de producto */
                 padding-top: 100px; 
                 padding-left: 15px;
                 padding-right: 15px;
@@ -213,6 +230,14 @@
             .hero-button-group .btn-cta {
                 width: 90%;
                 margin: 0.5rem auto;
+            }
+            
+            /* Para que el modal ponga la imagen arriba y texto abajo en móvil */
+            .modal-body .row {
+                flex-direction: column;
+            }
+            .modal-body .col-md-6 {
+                width: 100%;
             }
         }
 
@@ -290,7 +315,6 @@
                         <div class="col-lg-6">
                             <h2>¿Por Qué AmShop?</h2>
                             <p class="lead">No solo vendemos equipo; creamos experiencias.</p>
-                            <p>Con más de 10 años en la industria, entendemos que cada evento es único. Nuestro compromiso es brindarte la fiabilidad y la potencia que tu producción necesita, con el respaldo de las mejores marcas y un equipo de expertos listos para asesorarte.</p>
                             <ul>
                                 <li>Equipos 100% probados y garantizados.</li>
                                 <li>Asesoría personalizada para tu proyecto.</li>
@@ -300,10 +324,9 @@
                         <div class="col-lg-6">
                             <div class="mision-vision-box">
                                 <h2>Nuestra Misión</h2>
-                                <p>Proveer a nuestros clientes con el equipo de audio e iluminación de la más alta calidad, garantizando eventos inolvidables y experiencias sonoras inigualables.</p>
-                                <h2 class="mt-4">Nuestra Visió
-                                </h2>
-                                <p>Ser la empresa líder y de referencia en el mercado de equipamiento profesional, reconocida por nuestra innovación, fiabilidad y compromiso con el éxito de nuestros clientes.</p>
+                                <p>Proveer a nuestros clientes con el equipo de audio e iluminación de la más alta calidad...</p>
+                                <h2 class="mt-4">Nuestra Visió</h2>
+                                <p>Ser la empresa líder y de referencia en el mercado de equipamiento profesional...</p>
                             </div>
                         </div>
                     </div>
@@ -319,162 +342,99 @@
                 <div class="row">
                     <div class="col-lg-4 col-md-6 mb-4">
                         <div class="card h-100">
-                            <img src="amplificador1.jpg" class="card-img-top" alt="Amplificador 1">
+                            <img src="sinbosen-1.jpg" class="card-img-top" alt="Amplificador Sinbosen">
                             <div class="card-body">
-                                <h5 class="card-title">Amplificador XT-5000</h5>
-                                <p class="card-text">Potencia y fidelidad. 5000W RMS.</p>
+                                <h5 class="card-title">Amplificador Sinbosen</h5>
+                                <p class="card-text">Potente y económico. 4 canales de 2100 watts.</p>
                             </div>
                             <div class="card-footer text-center">
-                                <a href="#" class="btn btn-primary">Ver detalles</a>
+                                <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modalSinbosen">
+                                    Ver detalles
+                                </button>
                             </div>
                         </div>
                     </div>
-                </div>
+                    </div>
             </div>
         </section>
 
         <section id="content-iluminacion" class="page-section content-section d-none">
-            <div class="container">
-                <div class="text-center mb-5">
-                    <h2 class="seccion-titulo"><i class="bi bi-lightbulb-fill"></i> Iluminación Profesional</h2>
-                </div>
-                <div class="row">
-                    <div class="col-lg-4 col-md-6 mb-4">
-                        <div class="card h-100">
-                            <img src="luz1.jpg" class="card-img-top" alt="Luz 1">
-                            <div class="card-body">
-                                <h5 class="card-title">Beam 7R Pro</h5>
-                                <p class="card-text">Cabeza móvil 7R de alta velocidad.</p>
-                            </div>
-                            <div class="card-footer text-center">
-                                <a href="#" class="btn btn-primary">Ver detalles</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
+            </section>
 
         <section id="content-pantallas" class="page-section content-section d-none">
-            <div class="container">
-                <div class="text-center mb-5">
-                    <h2 class="seccion-titulo"><i class="bi bi-display-fill"></i> Pantallas LED'S</h2>
-                </div>
-                <div class="row">
-                    <div class="col-lg-4 col-md-6 mb-4">
-                        <div class="card h-100">
-                            <img src="pantalla1.jpg" class="card-img-top" alt="Pantalla LED">
-                            <div class="card-body">
-                                <h5 class="card-title">Módulo LED P3.9 Interior</h5>
-                                <p class="card-text">Panel de 50x50cm, pitch 3.9mm.</p>
-                            </div>
-                            <div class="card-footer text-center">
-                                <a href="#" class="btn btn-primary">Ver detalles</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
+            </section>
 
         <section id="content-microfonos" class="page-section content-section d-none">
-            <div class="container">
-                <div class="text-center mb-5">
-                    <h2 class="seccion-titulo"><i class="bi bi-mic-fill"></i> Micrófonos</h2>
-                </div>
-                <div class="row">
-                    <div class="col-lg-4 col-md-6 mb-4">
-                        <div class="card h-100">
-                            <img src="microfono1.jpg" class="card-img-top" alt="Micrófono">
-                            <div class="card-body">
-                                <h5 class="card-title">Condensador C-414</h5>
-                                <p class="card-text">Perfecto para voces de estudio.</p>
-                            </div>
-                            <div class="card-footer text-center">
-                                <a href="#" class="btn btn-primary">Ver detalles</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
+           </section>
 
         <section id="content-testimonios" class="page-section content-section d-none">
-            <div class="container">
-                <div class="text-center mb-5">
-                    <h2 class="seccion-titulo"><i class="bi bi-chat-quote-fill"></i> Testimonios</h2>
-                </div>
-                <div class="row justify-content-center">
-                    <div class="col-lg-6 mb-4">
-                        <div class="testimonial-card">
-                            <p class="testimonio-texto">
-                                "El servicio de AmShop fue increíble. Rentamos las pantallas LED y la iluminación para nuestro tour y la calidad fue de primer nivel. ¡Totalmente recomendados!"
-                            </p>
-                            <p class="client-name">- Juan P.</p>
-                            <p class="client-title">Manager, Banda "Los Eléctricos"</p>
-                        </div>
-                    </div>
-                    <div class="col-lg-6 mb-4">
-                        <div class="testimonial-card">
-                            <p class="testimonio-texto">
-                                "Como DJ, la fidelidad del audio lo es todo. Los amplificadores que compré aquí tienen una potencia limpia y sin distorsión. Mi set nunca había sonado mejor."
-                            </p>
-                            <p class="client-name">- DJ Spectra</p>
-                            <p class="client-title">Productor y DJ Profesional</p>
-                        </div>
-                    </div>
-                    <div class="col-lg-6 mb-4">
-                        <div class="testimonial-card">
-                            <p class="testimonio-texto">
-                                "Organizamos conferencias para más de 500 personas. Los micrófonos y el sistema de audio de AmShop son 100% fiables. Cero fallas, soporte técnico excelente."
-                            </p>
-                            <p class="client-name">- María F.</p>
-                            <p class="client-title">Directora, Eventos Corporativos ACME</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
+            </section>
 
         <section id="content-contacto" class="page-section content-section d-none">
-            <div class="container">
-                <div class="text-center mb-5">
-                    <h2 class="seccion-titulo"><i class="bi bi-telephone-fill"></i> Contáctanos</h2>
+            </section>
+
+    </main>
+    
+    <div class="modal fade" id="modalSinbosen" tabindex="-1" aria-labelledby="modalSinbosenLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg modal-dialog-centered">
+            <div class="modal-content">
+                
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="modalSinbosenLabel">Amplificador Sinbosen</h1>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
-                <div class="row justify-content-center">
-                    <div class="col-lg-8">
-                        <p class="lead text-center mb-5">
-                            ¿Listo para tu próximo evento? ¡Contáctanos! Estamos aquí para ayudarte a elegir el equipo perfecto.
-                        </p>
-                        <div style="background-color: #1c1c1c; padding: 30px; border-radius: 10px;">
-                            <div class="contact-info-item d-flex align-items-center">
-                                <i class="bi bi-telephone-fill"></i>
-                                <span>+52 55 1234 5678 (WhatsApp y Llamadas)</span>
+
+                <div class="modal-body">
+                    <div class="row">
+                        
+                        <div class="col-md-6">
+                            <div id="carouselSinbosen" class="carousel slide" data-bs-ride="carousel">
+                                <div class="carousel-inner">
+                                    <div class="carousel-item active">
+                                        <img src="sinbosen-1.jpg" class="d-block w-100" alt="Foto 1 del amplificador">
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img src="sinbosen-2.jpg" class="d-block w-100" alt="Foto 2 del amplificador">
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img src="sinbosen-3.jpg" class="d-block w-100" alt="Foto 3 del amplificador">
+                                    </div>
+                                </div>
+                                <button class="carousel-control-prev" type="button" data-bs-target="#carouselSinbosen" data-bs-slide="prev">
+                                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                    <span class="visually-hidden">Anterior</span>
+                                </button>
+                                <button class="carousel-control-next" type="button" data-bs-target="#carouselSinbosen" data-bs-slide="next">
+                                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                    <span class="visually-hidden">Siguiente</span>
+                                </button>
                             </div>
-                            <div class="contact-info-item d-flex align-items-center">
-                                <i class="bi bi-envelope-fill"></i>
-                                <span>ventas@amshop.com</span>
-                            </div>
-                            <div class="contact-info-item d-flex align-items-center">
-                                <i class="bi bi-geo-alt-fill"></i>
-                                <span>Av. Siempre Viva 123, Col. Centro, Ciudad de México</span>
-                            </div>
+                        </div>
+                        
+                        <div class="col-md-6">
+                            <h3 style="color: #00BFFF;">Características Principales</h3>
+                            <p>Potente y económico, este amplificador de 4 canales es la solución perfecta para tus necesidades de audio profesional.</p>
                             
-                            <hr class="my-4" style="border-color: #555;">
-                            
-                            <h4 class="text-center mb-3" style="color: #00BFFF;">Horario de Atención</h4>
-                            <p class="text-center mb-0">Lunes a Viernes: 9:00 AM - 6:00 PM</p>
-                            <p class="text-center">Sábado: 10:00 AM - 2:00 PM</p>
+                            <ul class="list-unstyled" style="padding-top: 10px;">
+                                <li class="mb-2"><i class="bi bi-check-circle-fill me-2"></i>Ideal para medios o monitores, así como para graves.</li>
+                                <li class="mb-2"><i class="bi bi-check-circle-fill me-2"></i>Práctico, porque solo ocupa dos espacios de rack.</li>
+                                <li class="mb-2"><i class="bi bi-check-circle-fill me-2"></i>Ligero para evitar que se dañe transportándolo.</li>
+                                <li class="mb-2"><i class="bi bi-check-circle-fill me-2"></i>Sus 4 canales te permiten distintas opciones en cada canal.</li>
+                                <li class="mb-2"><i class="bi bi-check-circle-fill me-2"></i>Dip switch ideal para limitar cada salida.</li>
+                                <li class="mb-2"><i class="bi bi-check-circle-fill me-2"></i><strong>Potencia:</strong> 4 canales de 2100 watts.</li>
+                                <li class="mb-2"><i class="bi bi-check-circle-fill me-2"></i>Soporte en México.</li>
+                                <li class="mb-2"><i class="bi bi-check-circle-fill me-2"></i>1 año de garantía.</li>
+                            </ul>
                         </div>
                     </div>
                 </div>
+                
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                </div>
             </div>
-        </section>
-
-
-    </main>
-
+        </div>
+    </div>
     <footer class="text-center p-4" style="background-color: #1c1c1c;">
         <p class="mb-0">AmShop © 2025 - Todos los derechos reservados.</p>
     </footer>
