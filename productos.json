@@ -1,0 +1,20 @@
+[
+  {
+    "id": 1,
+    "nombre": "Laptop Pro X1",
+    "descripcion": "Ideal para desarrollo y diseño gráfico de alto nivel.",
+    "precio": "599.99",
+    "precioAnterior": "899.99",
+    "imagen": "https://via.placeholder.com/300",
+    "specs": ["16GB RAM", "512GB SSD", "Intel i7"]
+  },
+  {
+    "id": 2,
+    "nombre": "Audífonos Hi-Fi",
+    "descripcion": "Cancelación de ruido activa y sonido envolvente.",
+    "precio": "129.00",
+    "precioAnterior": "199.00",
+    "imagen": "https://via.placeholder.com/300",
+    "specs": ["Bluetooth 5.2", "40h Batería", "USB-C"]
+  }
+]
