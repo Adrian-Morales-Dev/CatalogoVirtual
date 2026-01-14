@@ -1,15 +1,137 @@
 [
   {
     "id": 1,
-    "nombre": "Laptop Pro X1",
-    "descripcion": "Ideal para desarrollo y diseño gráfico de alto nivel.",
-    "precio": "599.99",
-    "precioAnterior": "899.99",
-    "imagenes": [
-      "https://via.placeholder.com/600x400/2ecc71/ffffff?text=Laptop+Front",
-      "https://via.placeholder.com/600x400/1a1a1a/ffffff?text=Laptop+Side",
-      "https://via.placeholder.com/600x400/27ae60/ffffff?text=Laptop+Back"
-    ],
-    "specs": ["16GB RAM", "512GB SSD", "Intel i7"]
+    "nombre": "Cabezal Móvil LED 60W",
+    "descripcion": "Iluminación robótica para eventos y escenarios.",
+    "precio": "245.00",
+    "precioAnterior": "310.00",
+    "imagenes": ["https://images.unsplash.com/photo-1516280440614-37939bbacd81?q=80&w=600"],
+    "specs": ["LED 60W", "Rueda de 7 Gobos", "DMX 9/11 Canales"]
+  },
+  {
+    "id": 2,
+    "nombre": "Bafle Amplificado 15\" Pro",
+    "descripcion": "Sonido potente y claro para exteriores e interiores.",
+    "precio": "380.00",
+    "precioAnterior": "450.00",
+    "imagenes": ["https://images.unsplash.com/photo-1545454675-3531b543be5d?q=80&w=600"],
+    "specs": ["1000W Pico", "Bluetooth TWS", "Entrada XLR/Plug"]
+  },
+  {
+    "id": 3,
+    "nombre": "Consola de Audio 12 Canales",
+    "descripcion": "Mezcladora profesional con efectos digitales.",
+    "precio": "190.00",
+    "precioAnterior": "240.00",
+    "imagenes": ["https://images.unsplash.com/photo-1598488035139-bdbb2231ce04?q=80&w=600"],
+    "specs": ["Phantom Power", "Interfaz USB", "16 Efectos DSP"]
+  },
+  {
+    "id": 4,
+    "nombre": "Micrófono Inalámbrico Dual",
+    "descripcion": "Sistema de mano de alta fidelidad sin interferencias.",
+    "precio": "120.00",
+    "precioAnterior": "165.00",
+    "imagenes": ["https://images.unsplash.com/photo-1551712702-4b724f2b9691?q=80&w=600"],
+    "specs": ["Banda UHF", "Rango 50m", "Display Digital"]
+  },
+  {
+    "id": 5,
+    "nombre": "Máquina de Humo 400W",
+    "descripcion": "Ideal para resaltar los rayos de luz y lasers.",
+    "precio": "45.00",
+    "precioAnterior": "60.00",
+    "imagenes": ["https://images.unsplash.com/photo-1492684223066-81342ee5ff30?q=80&w=600"],
+    "specs": ["Calentamiento rápido", "Control Alámbrico", "Tanque 0.5L"]
+  },
+  {
+    "id": 6,
+    "nombre": "Par LED Slim 18x3 RGB",
+    "descripcion": "Baño de color potente para salones y fiestas.",
+    "precio": "35.00",
+    "precioAnterior": "50.00",
+    "imagenes": ["https://images.unsplash.com/photo-1470225620780-dba8ba36b745?q=80&w=600"],
+    "specs": ["Automático/Audio", "Maestro/Esclavo", "Consumo 60W"]
+  },
+  {
+    "id": 7,
+    "nombre": "Controlador DJ 4 Canales",
+    "descripcion": "Compatible con Serato y Rekordbox.",
+    "precio": "520.00",
+    "precioAnterior": "650.00",
+    "imagenes": ["https://images.unsplash.com/photo-1571266028243-3716f02d2d2e?q=80&w=600"],
+    "specs": ["Jog Wheels Grandes", "Pads RGB", "Interfaz Audio"]
+  },
+  {
+    "id": 8,
+    "nombre": "Laser RGB 500mW",
+    "descripcion": "Efectos volumétricos y animaciones multicolor.",
+    "precio": "140.00",
+    "precioAnterior": "180.00",
+    "imagenes": ["https://images.unsplash.com/photo-1508700115892-45ecd05ae2ad?q=80&w=600"],
+    "specs": ["Alta Velocidad", "DMX/Auto", "Patrones Geométricos"]
+  },
+  {
+    "id": 9,
+    "nombre": "Interfaz DMX a USB",
+    "descripcion": "Controla tus luces desde la computadora.",
+    "precio": "65.00",
+    "precioAnterior": "85.00",
+    "imagenes": ["https://images.unsplash.com/photo-1550009158-9ebf69173e03?q=80&w=600"],
+    "specs": ["Aislada", "Compatible Freestyler", "Salida XLR 3 Pin"]
+  },
+  {
+    "id": 10,
+    "nombre": "Barra LED Wash 24x3",
+    "descripcion": "Ideal para bañar paredes y fondos de escenario.",
+    "precio": "85.00",
+    "precioAnterior": "110.00",
+    "imagenes": ["https://images.unsplash.com/photo-1459749411177-042180ce673c?q=80&w=600"],
+    "specs": ["Segmentada", "RGB 3 en 1", "Estructura Aluminio"]
+  },
+  {
+    "id": 11,
+    "nombre": "Soporte T para Luces",
+    "descripcion": "Trípode reforzado para elevar proyectores.",
+    "precio": "40.00",
+    "precioAnterior": "55.00",
+    "imagenes": ["https://images.unsplash.com/photo-1496337589254-7e19d01ced44?q=80&w=600"],
+    "specs": ["Altura 3m", "Carga 40kg", "Acero Negro"]
+  },
+  {
+    "id": 12,
+    "nombre": "Mezcladora de Video HD",
+    "descripcion": "Ideal para streamings y eventos en vivo.",
+    "precio": "890.00",
+    "precioAnterior": "1100.00",
+    "imagenes": ["https://images.unsplash.com/photo-1478737270239-2fccd2c7fd91?q=80&w=600"],
+    "specs": ["4 Entradas HDMI", "Salida USB-C", "Multiview"]
+  },
+  {
+    "id": 13,
+    "nombre": "Audífonos de Estudio",
+    "descripcion": "Respuesta plana para mezcla profesional.",
+    "precio": "95.00",
+    "precioAnterior": "130.00",
+    "imagenes": ["https://images.unsplash.com/photo-1505740420928-5e560c06d30e?q=80&w=600"],
+    "specs": ["Driver 45mm", "Cerrados", "Cable Desmontable"]
+  },
+  {
+    "id": 14,
+    "nombre": "Bajo Activo 18\"",
+    "descripcion": "Refuerzo de graves profundo para eventos.",
+    "precio": "450.00",
+    "precioAnterior": "580.00",
+    "imagenes": ["https://images.unsplash.com/photo-1543157145-f78c636d023d?q=80&w=600"],
+    "specs": ["1200W RMS", "Crossover Integrado", "Clase D"]
+  },
+  {
+    "id": 15,
+    "nombre": "Cable XLR Pro 10m",
+    "descripcion": "Conectores metálicos y bajo ruido.",
+    "precio": "15.00",
+    "precioAnterior": "22.00",
+    "imagenes": ["https://images.unsplash.com/photo-1590658268037-6bf12165a8df?q=80&w=600"],
+    "specs": ["Balanceado", "Libre Oxígeno", "Grip Metálico"]
   }
 ]

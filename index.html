@@ -3,11 +3,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>AmShop | Catálogo</title>
-    <link rel="stylesheet" href="style.css">
+    <title>AmShop | Audio e Iluminación Profesional</title>
+    
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+    
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
+
     <nav class="navbar">
         <div class="logo">AmShop</div>
         <div class="nav-buttons">
@@ -17,21 +22,51 @@
     </nav>
 
     <header class="hero">
-        <h1>TECHNOLOGY <span>BIG SALE</span></h1>
-        <p>Especialistas en computación avanzada</p>
+        <div class="hero-content">
+            <h1>SOUND & LIGHTS <span>PRO SALE</span></h1>
+            <p>Expertos en audio e iluminación profesional para tus eventos</p>
+        </div>
     </header>
 
-    <main id="catalogo" class="grid-container"></main>
+    <main>
+        <div class="container-title">
+            <h2>Nuestros Productos</h2>
+            <div class="underline"></div>
+        </div>
+        
+        <section id="catalogo" class="grid-container"></section>
+    </main>
 
     <div id="product-modal" class="modal">
-        <span class="close-modal">&times;</span>
-        <div class="modal-content">
-            <button class="prev" onclick="changeSlide(-1)">&#10094;</button>
-            <div id="modal-image-container"></div>
-            <button class="next" onclick="changeSlide(1)">&#10095;</button>
+        <span class="close-modal"><i class="fas fa-times"></i></span>
+        
+        <div class="modal-wrapper">
+            <button class="modal-arrow prev" onclick="changeSlide(-1)">
+                <i class="fas fa-chevron-left"></i>
+            </button>
+
+            <div id="modal-image-container" class="modal-image-box">
+                </div>
+
+            <button class="modal-arrow next" onclick="changeSlide(1)">
+                <i class="fas fa-chevron-right"></i>
+            </button>
         </div>
+        
+        <div id="modal-caption" class="modal-caption"></div>
     </div>
 
+    <section id="testimonios" style="padding: 100px 5%; text-align: center; background: #fff;">
+        <h2>Testimonios</h2>
+        <p>Próximamente: Lo que nuestros clientes dicen de AmShop.</p>
+    </section>
+
+    <section id="contacto" style="padding: 100px 5%; text-align: center; background: var(--oscuro); color: white;">
+        <h2>Contáctanos</h2>
+        <p>¿Necesitas una cotización? Escríbenos a ventas@amshop.com.mx</p>
+    </section>
+
     <script src="script.js"></script>
+
 </body>
 </html>
