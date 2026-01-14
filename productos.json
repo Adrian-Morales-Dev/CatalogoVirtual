@@ -5,16 +5,11 @@
     "descripcion": "Ideal para desarrollo y diseño gráfico de alto nivel.",
     "precio": "599.99",
     "precioAnterior": "899.99",
-    "imagen": "https://via.placeholder.com/300",
+    "imagenes": [
+      "https://via.placeholder.com/600x400/2ecc71/ffffff?text=Laptop+Front",
+      "https://via.placeholder.com/600x400/1a1a1a/ffffff?text=Laptop+Side",
+      "https://via.placeholder.com/600x400/27ae60/ffffff?text=Laptop+Back"
+    ],
     "specs": ["16GB RAM", "512GB SSD", "Intel i7"]
-  },
-  {
-    "id": 2,
-    "nombre": "Audífonos Hi-Fi",
-    "descripcion": "Cancelación de ruido activa y sonido envolvente.",
-    "precio": "129.00",
-    "precioAnterior": "199.00",
-    "imagen": "https://via.placeholder.com/300",
-    "specs": ["Bluetooth 5.2", "40h Batería", "USB-C"]
   }
 ]

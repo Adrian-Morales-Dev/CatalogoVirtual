@@ -3,19 +3,34 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>AM Shop - Catálogo Tecnológico</title>
+    <title>AmShop | Catálogo</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
 <body>
-    <header>
-        <div class="banner">
-            <h1>TECHNOLOGY <span>BIG SALE</span></h1>
-            <p>Limited time only - Get up to 50% discount</p>
+    <nav class="navbar">
+        <div class="logo">AmShop</div>
+        <div class="nav-buttons">
+            <a href="#contacto" class="btn-nav">Contáctanos</a>
+            <a href="#testimonios" class="btn-nav">Testimonios</a>
         </div>
+    </nav>
+
+    <header class="hero">
+        <h1>TECHNOLOGY <span>BIG SALE</span></h1>
+        <p>Especialistas en computación avanzada</p>
     </header>
 
-    <main id="catalogo" class="grid-container">
-        </main>
+    <main id="catalogo" class="grid-container"></main>
+
+    <div id="product-modal" class="modal">
+        <span class="close-modal">&times;</span>
+        <div class="modal-content">
+            <button class="prev" onclick="changeSlide(-1)">&#10094;</button>
+            <div id="modal-image-container"></div>
+            <button class="next" onclick="changeSlide(1)">&#10095;</button>
+        </div>
+    </div>
 
     <script src="script.js"></script>
 </body>
