@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>AmShop | Audio e Iluminación</title>
+    <title>AmShop | Audio e Iluminación Profesional</title>
     
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
@@ -29,7 +29,7 @@
 
     <main class="main-container">
         <div class="container-title">
-            <h2>Nuestros Productos</h2>
+            <h2>Catálogo de Productos</h2>
             <div class="underline"></div>
         </div>
         
@@ -38,15 +38,34 @@
     </main>
 
     <div id="product-modal" class="modal">
-        <span class="close-modal"><i class="fas fa-times"></i></span>
-        <div class="modal-wrapper">
-            <button class="modal-arrow prev" onclick="changeSlide(-1)"><i class="fas fa-chevron-left"></i></button>
-            <div id="modal-image-container" class="modal-image-box"></div>
-            <button class="modal-arrow next" onclick="changeSlide(1)"><i class="fas fa-chevron-right"></i></button>
+        <div class="modal-content">
+            <span class="close-modal"><i class="fas fa-times"></i></span>
+            
+            <div class="modal-body-grid">
+                <div class="modal-visuals">
+                    <div class="carousel-container">
+                        <button class="modal-arrow prev" onclick="changeSlide(-1)"><i class="fas fa-chevron-left"></i></button>
+                        <div id="modal-image-container" class="modal-image-box"></div>
+                        <button class="modal-arrow next" onclick="changeSlide(1)"><i class="fas fa-chevron-right"></i></button>
+                    </div>
+                </div>
+
+                <div class="modal-info">
+                    <h2 id="modal-title">Nombre del Producto</h2>
+                    <p id="modal-price" class="modal-price-text">$0.00</p>
+                    <div class="divider"></div>
+                    <h3>Descripción</h3>
+                    <p id="modal-long-desc">Descripción detallada aquí...</p>
+                    
+                    <a id="whatsapp-link" href="#" target="_blank" class="whatsapp-btn">
+                        <i class="fab fa-whatsapp"></i> Envíame Whatsapp para mas información
+                    </a>
+                </div>
+            </div>
         </div>
-        <div id="modal-caption" class="modal-caption"></div>
     </div>
 
     <script src="script.js"></script>
+
 </body>
 </html>
