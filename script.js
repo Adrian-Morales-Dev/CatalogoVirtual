@@ -2,7 +2,7 @@ let currentImages = [];
 let currentIndex = 0;
 
 // Reemplaza con tu número real (incluye el código de país, ej: 521 para México)
-const MI_WHATSAPP = "5215569336219"; 
+const MI_WHATSAPP = "521234567890"; 
 
 // Cargar productos
 fetch('productos.json')
@@ -37,7 +37,7 @@ function openModal(prod) {
     
     // Configurar link de WhatsApp
     const mensaje = encodeURIComponent(`Hola AmShop, me interesa el producto: ${prod.nombre}`);
-    document.getElementById('whatsapp-link').href = `https://wa.me/${+525569336219}?text=${Holis}`;
+    document.getElementById('whatsapp-link').href = `https://wa.me/${MI_WHATSAPP}?text=${mensaje}`;
     
     document.getElementById('product-modal').style.display = "block";
     updateModalImage();
