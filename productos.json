@@ -94,5 +94,85 @@
     "descripcionAmplia": "Módulo XLR de 3 pines para transmisión de datos DMX vía radiofrecuencia. Elimina el cableado entre consola y luminarias.",
     "precio": "39.00",
     "imagenes": ["img/image_e77cc5.png", "img/image_e77cc5.png", "img/image_e77cc5.png"]
+  },
+  {
+    "id": 26,
+    "nombre": "Grapa de Aluminio para Truss",
+    "descripcion": "Abrazadera de carga pesada.",
+    "descripcionAmplia": "Clamp de aluminio pulido para tubo de 2 pulgadas (50mm). Soporta cargas de hasta 500kg, ideal para colgar cabezas móviles y equipos pesados en estructuras truss.",
+    "precio": "25.00",
+    "imagenes": ["img/image_b0c130.png", "img/image_b0c130.png", "img/image_b0c130.png"]
+  },
+  {
+    "id": 27,
+    "nombre": "Mini Controlador DMX 512",
+    "descripcion": "Consola compacta de prueba.",
+    "descripcionAmplia": "Controlador DMX portátil de 3 canales con faders deslizantes y display digital. Perfecto para pruebas rápidas de equipos, instalaciones fijas pequeñas o como respaldo de emergencia.",
+    "precio": "45.00",
+    "imagenes": ["img/image_b0cc17.png", "img/image_b0cc17.png", "img/image_b0cc17.png"]
+  },
+  {
+    "id": 28,
+    "nombre": "Interfaz USB-DMX Básica",
+    "descripcion": "Control de luces por computadora.",
+    "descripcionAmplia": "Interfaz económica para conectar tu PC o Laptop a tus luces DMX. Compatible con software gratuito como Freestyler para shows de iluminación básicos.",
+    "precio": "30.00",
+    "imagenes": ["img/image_b0ce4c.png", "img/image_b0ce4c.png", "img/image_b0ce4c.png"]
+  },
+  {
+    "id": 29,
+    "nombre": "Cable de Seguridad de Acero",
+    "descripcion": "Safety de 80cm con mosquetón.",
+    "descripcionAmplia": "Cable de acero trenzado (safety cable) obligatorio para asegurar equipos de iluminación colgados. Longitud de 80cm con mosquetón de cierre rápido para máxima seguridad.",
+    "precio": "8.00",
+    "imagenes": ["img/image_b0c400.png", "img/image_b0c400.png", "img/image_b0c400.png"]
+  },
+  {
+    "id": 30,
+    "nombre": "Abrazadera Doble Giratoria",
+    "descripcion": "Cople para unir dos tubos.",
+    "descripcionAmplia": "Clamp doble de aluminio con giro de 360 grados. Permite unir dos tubos de truss en cualquier ángulo, ideal para crear estructuras complejas o soportes personalizados.",
+    "precio": "40.00",
+    "imagenes": ["img/image_b0c270.png", "img/image_b0c270.png", "img/image_b0c270.png"]
+  },
+  {
+    "id": 31,
+    "nombre": "Safety Cable Delgado 60cm",
+    "descripcion": "Seguridad para equipos ligeros.",
+    "descripcionAmplia": "Cable de seguridad de acero más delgado, diseñado para asegurar par leds, barras y efectos de iluminación de menor peso. Longitud de 60cm.",
+    "precio": "6.00",
+    "imagenes": ["img/image_b0c4e0.png", "img/image_b0c4e0.png", "img/image_b0c4e0.png"]
+  },
+  {
+    "id": 32,
+    "nombre": "Conector XLR Hembra Panel",
+    "descripcion": "Chasis de 3 pines para racks.",
+    "descripcionAmplia": "Conector de chasis XLR hembra de 3 pines con cuerpo metálico resistente. Ideal para patch panels, snakes de audio o entradas de DMX en equipos personalizados.",
+    "precio": "5.00",
+    "imagenes": ["img/image_b0c633.png", "img/image_b0c633.png", "img/image_b0c633.png"]
+  },
+  {
+    "id": 33,
+    "nombre": "Gancho 'C' para Luces",
+    "descripcion": "Soporte económico para par led.",
+    "descripcionAmplia": "Abrazadera tipo 'C' (C-Clamp) de acero para colgar equipos ligeros como par leds en tubos o estructuras. Incluye tornillo de apriete y mariposa.",
+    "precio": "7.00",
+    "imagenes": ["img/image_b0d1f1.png", "img/image_b0d1f1.png", "img/image_b0d1f1.png"]
+  },
+  {
+    "id": 34,
+    "nombre": "Adaptador XLR Macho-Hembra",
+    "descripcion": "Cople barril metálico.",
+    "descripcionAmplia": "Adaptador directo de XLR macho a XLR hembra. Útil para unir dos cables, cambiar el género de una conexión o como extensión rápida sin cable.",
+    "precio": "9.00",
+    "imagenes": ["img/image_b0cc43.png", "img/image_b0cc43.png", "img/image_b0cc43.png"]
+  },
+  {
+    "id": 35,
+    "nombre": "Conector XLR Macho Panel",
+    "descripcion": "Chasis de salida 3 pines.",
+    "descripcionAmplia": "Conector de chasis XLR macho de 3 pines. Robusto y duradero, diseñado para salidas de audio en mezcladoras o salidas DMX en interfaces y splitters.",
+    "precio": "5.00",
+    "imagenes": ["img/image_b0c8b0.png", "img/image_b0c8b0.png", "img/image_b0c8b0.png"]
   }
 ]

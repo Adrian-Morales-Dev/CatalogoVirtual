@@ -15,12 +15,13 @@ window.addEventListener('load', () => {
                     <div class="img-container">
                         <img src="${prod.imagenes[0]}" alt="${prod.nombre}" onerror="this.src='https://via.placeholder.com/300?text=Sin+Imagen'">
                     </div>
-                    <h3 style="font-size: 1.1rem; color:#0f172a;">${prod.nombre}</h3>
-                    <p style="font-weight:bold; color:#005f99; font-size: 1.2rem; margin-top:5px;">$${prod.precio}</p>
+                    <h3 style="font-size: 1.1rem; color:#0f172a; margin-bottom: 10px;">${prod.nombre}</h3>
+                    <p style="font-weight:bold; color:#005f99; font-size: 1.3rem;">$${prod.precio}</p>
                 `;
                 container.appendChild(card);
             });
-        });
+        })
+        .catch(err => console.error("Error cargando productos:", err));
 });
 
 function openModal(prod) {
