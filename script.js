@@ -1,51 +1,58 @@
+// CONFIGURACIÓN: Pon tu número aquí (Ej: 521XXXXXXXXXX)
+const MI_WHATSAPP = "5215569336219"; 
+
 let currentImages = [];
 let currentIndex = 0;
 
-// Reemplaza con tu número real (incluye el código de país, ej: 521 para México)
-const MI_WHATSAPP = "521234567890"; 
+// Esperar a que toda la página cargue
+window.addEventListener('load', () => {
+    const container = document.getElementById('catalogo');
+    
+    fetch('productos.json')
+        .then(res => {
+            if (!res.ok) throw new Error("No se pudo cargar el JSON");
+            return res.json();
+        })
+        .then(data => {
+            data.forEach(prod => {
+                const card = document.createElement('div');
+                card.className = 'producto-card';
+                
+                // Evento de clic para abrir el modal
+                card.onclick = () => openModal(prod);
+                
+                card.innerHTML = `
+                    <div class="img-container">
+                        <img src="${prod.imagenes[0]}" alt="${prod.nombre}">
+                    </div>
+                    <h3>${prod.nombre}</h3>
+                    <p style="font-weight:bold; color:#005f99;">$${prod.precio}</p>
+                `;
+                container.appendChild(card);
+            });
+        })
+        .catch(err => console.error("Error:", err));
+});
 
-// Cargar productos
-fetch('productos.json')
-    .then(res => res.json())
-    .then(data => {
-        const container = document.getElementById('catalogo');
-        data.forEach(prod => {
-            const card = document.createElement('div');
-            card.className = 'producto-card';
-            card.onclick = () => openModal(prod);
-            
-            card.innerHTML = `
-                <div class="img-container">
-                    <img src="${prod.imagenes[0]}" alt="${prod.nombre}">
-                </div>
-                <h3>${prod.nombre}</h3>
-                <p style="font-weight:bold; color:var(--azul-metalico);">$${prod.precio}</p>
-            `;
-            container.appendChild(card);
-        });
-    });
-
-// Funciones del Modal
 function openModal(prod) {
+    const modal = document.getElementById('product-modal');
     currentImages = prod.imagenes;
     currentIndex = 0;
     
-    // Llenar información
     document.getElementById('modal-title').innerText = prod.nombre;
     document.getElementById('modal-price').innerText = `$${prod.precio}`;
-    document.getElementById('modal-long-desc').innerText = prod.descripcionAmplia;
+    document.getElementById('modal-long-desc').innerText = prod.descripcionAmplia || prod.descripcion;
     
-    // Configurar link de WhatsApp
     const mensaje = encodeURIComponent(`Hola AmShop, me interesa el producto: ${prod.nombre}`);
     document.getElementById('whatsapp-link').href = `https://wa.me/${MI_WHATSAPP}?text=${mensaje}`;
     
-    document.getElementById('product-modal').style.display = "block";
+    modal.style.display = "block";
     updateModalImage();
 }
 
 function updateModalImage() {
-    const container = document.getElementById('modal-image-container');
-    container.innerHTML = `<img src="${currentImages[currentIndex]}">`;
+    const box = document.getElementById('modal-image-container');
+    box.innerHTML = `<img src="${currentImages[currentIndex]}" alt="Producto">`;
 }
 
 function changeSlide(n) {
