@@ -5,10 +5,7 @@
     "descripcion": "Iluminación robótica para escenarios.",
     "descripcionAmplia": "Este cabezal móvil profesional cuenta con un potente LED de 60W, ideal para eventos medianos. Incluye rueda de 7 gobos más blanco y rueda de 7 colores.",
     "precio": "245.00",
-    "imagenes": [
-      "https://images.unsplash.com/photo-1516280440614-37939bbacd81?w=600",
-      "https://images.unsplash.com/photo-1492684223066-81342ee5ff30?w=600"
-    ]
+    "imagenes": ["https://images.unsplash.com/photo-1516280440614-37939bbacd81?w=600", "https://images.unsplash.com/photo-1492684223066-81342ee5ff30?w=600"]
   },
   {
     "id": 2,
@@ -16,10 +13,7 @@
     "descripcion": "Sonido potente para exteriores.",
     "descripcionAmplia": "Bafle activo de 15 pulgadas con una potencia pico de 1000W. Equipado con conectividad Bluetooth TWS para enlazar dos bafles sin cables.",
     "precio": "380.00",
-    "imagenes": [
-      "https://images.unsplash.com/photo-1545454675-3531b543be5d?w=600",
-      "https://images.unsplash.com/photo-1590658268037-6bf12165a8df?w=600"
-    ]
+    "imagenes": ["https://images.unsplash.com/photo-1545454675-3531b543be5d?w=600"]
   },
   {
     "id": 3,
