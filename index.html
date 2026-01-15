@@ -4,10 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>AmShop | Audio e Iluminación Profesional</title>
-    
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
-    
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -23,24 +21,21 @@
     <header class="hero">
         <div class="hero-content">
             <h1>VENTA DE AUDIO E ILUMINACION <span>PROFESIONAL</span></h1>
-            <p>Expertos en audio e iluminación profesional para tus eventos</p>
+            <p>Componentes y equipos de alta fidelidad para tus eventos</p>
         </div>
     </header>
 
     <main class="main-container">
         <div class="container-title">
-            <h2>Catálogo de Productos</h2>
+            <h2>Catálogo AmShop</h2>
             <div class="underline"></div>
         </div>
-        
-        <section id="catalogo" class="grid-container">
-            </section>
+        <section id="catalogo" class="grid-container"></section>
     </main>
 
     <div id="product-modal" class="modal">
         <div class="modal-content">
             <span class="close-modal"><i class="fas fa-times"></i></span>
-            
             <div class="modal-body-grid">
                 <div class="modal-visuals">
                     <div class="carousel-container">
@@ -49,14 +44,12 @@
                         <button class="modal-arrow next" onclick="changeSlide(1)"><i class="fas fa-chevron-right"></i></button>
                     </div>
                 </div>
-
                 <div class="modal-info">
                     <h2 id="modal-title">Cargando...</h2>
                     <p id="modal-price" class="modal-price-text">$0.00</p>
                     <div class="divider"></div>
-                    <h3>Descripción</h3>
-                    <p id="modal-long-desc">Detalles del producto...</p>
-                    
+                    <h3>Descripción Técnica</h3>
+                    <p id="modal-long-desc"></p>
                     <a id="whatsapp-link" href="#" target="_blank" class="whatsapp-btn">
                         <i class="fab fa-whatsapp"></i> Envíame Whatsapp para mas información
                     </a>
@@ -65,7 +58,36 @@
         </div>
     </div>
 
-    <script src="script.js"></script>
+    <a href="https://wa.me/5215569336219" class="whatsapp-float" target="_blank">
+        <i class="fab fa-whatsapp"></i>
+    </a>
 
+    <footer class="main-footer">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>AmShop</h3>
+                <p>Tu socio confiable en tecnología para espectáculos.</p>
+            </div>
+            <div class="footer-section">
+                <h4>Enlaces</h4>
+                <a href="#">Inicio</a>
+                <a href="#testimonios">Testimonios</a>
+                <a href="#contacto">Contacto</a>
+            </div>
+            <div class="footer-section">
+                <h4>Síguenos</h4>
+                <div class="social-icons">
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-youtube"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 AmShop - Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
 </body>
 </html>
