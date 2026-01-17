@@ -20,8 +20,7 @@ window.addEventListener('load', () => {
                 `;
                 container.appendChild(card);
             });
-        })
-        .catch(err => console.error("Error cargando productos:", err));
+        });
 });
 
 function openModal(prod) {
