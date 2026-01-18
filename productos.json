@@ -13,7 +13,7 @@
     "descripcion": "Transmisión de video HD sin pérdida.",
     "descripcionAmplia": "Extensor de señal HDMI profesional que permite alcanzar distancias de hasta 60 metros utilizando un solo cable de red Cat6. Soporta resolución 1080p y es ideal para instalaciones fijas en auditorios o eventos masivos.",
     "precio": "48.00",
-    "imagenes": ["image_dcf8ff.png", "image_dcf8ff.png", "image_dcf8ff.png"]
+    "imagenes": ["2.1.jpg", "2.2.jpg", "2.3.jpg"]
   },
   {
     "id": 3,
@@ -21,7 +21,7 @@
     "descripcion": "Control maestro para detonación de Sparkular.",
     "descripcionAmplia": "Juego de 8 activadores inalámbricos con maletín de transporte reforzado. Permite la detonación segura y precisa de efectos de pirotecnia fría mediante control remoto, con un rango de operación de hasta 50 metros.",
     "precio": "225.00",
-    "imagenes": ["image_dcf93f.png", "image_dcf93f.png", "image_dcf93f.png"]
+    "imagenes": ["3.1.jpg", "3.2.jpg", "3.3.jpg"]
   },
   {
     "id": 4,
@@ -29,7 +29,7 @@
     "descripcion": "Repuesto completo para mantenimiento mayor.",
     "descripcionAmplia": "El paquete definitivo para la reparación de cabezas móviles. Incluye lámpara de alta descarga, balastra electrónica compatible y fuente de poder regulada, asegurando la compatibilidad total de los componentes.",
     "precio": "260.00",
-    "imagenes": ["image_e75e61.png", "image_e75e61.png", "image_e75e61.png"]
+    "imagenes": ["4.1.jpg", "4.2.jpg", "4.3.jpg"]
   },
   {
     "id": 5,
@@ -37,15 +37,15 @@
     "descripcion": "Potencia extrema para eventos de gran formato.",
     "descripcionAmplia": "Lámpara de descarga original de 440W (Tecnología 20R). Ofrece una luminosidad excepcional y una temperatura de color constante, diseñada para las cabezas móviles más potentes del mercado profesional.",
     "precio": "210.00",
-    "imagenes": ["image_e700ae.png", "image_e700ae.png", "image_e700ae.png"]
+    "imagenes": ["5.1.jpg", "5.2.jpg", "5.3.jpg"]
   },
   {
     "id": 6,
-    "nombre": "Lámpara Metal Halide NSD 150W",
+    "nombre": "Lámpara NSD 150W",
     "descripcion": "Foco de alta eficiencia para efectos dinámicos.",
     "descripcionAmplia": "Lámpara NSD de 150W con base bi-pin, ideal para proyectores de gobos y efectos de iluminación compactos. Proporciona una luz blanca brillante con una excelente relación de consumo y rendimiento.",
     "precio": "18.00",
-    "imagenes": ["image_e70812.png", "image_e70812.png", "image_e70812.png"]
+    "imagenes": ["6.1.jpg", "6.2.jpg", "6.3.jpg"]
   },
   {
     "id": 7,
@@ -53,7 +53,7 @@
     "descripcion": "El estándar para cabezas móviles Beam.",
     "descripcionAmplia": "Foco de descarga 7R de 230W con reflector parabólico integrado. Es el repuesto más utilizado en la industria por su equilibrio entre potencia de haz (Beam) y durabilidad operativa.",
     "precio": "95.00",
-    "imagenes": ["image_e70b72.png", "image_e70b72.png", "image_e70b72.png"]
+    "imagenes": ["7.1.jpg", "7.2.jpg", "7.3.jpg"]
   },
   {
     "id": 8,
@@ -61,7 +61,7 @@
     "descripcion": "Conversión de protocolo de red a DMX.",
     "descripcionAmplia": "Nodo de alta velocidad que recibe universos DMX vía Ethernet bajo el protocolo Art-Net. Permite el control de luminarias desde largas distancias utilizando infraestructura de red estándar.",
     "precio": "145.00",
-    "imagenes": ["image_e77c52.png", "image_e77c52.png", "image_e77c52.png"]
+    "imagenes": ["8.1.jpg", "8.2.jpg", "8.3.png"]
   },
   {
     "id": 9,
@@ -69,7 +69,7 @@
     "descripcion": "Compatibilidad versátil para cabezas ligeras.",
     "descripcionAmplia": "Lámpara de 132W diseñada para ser compatible con una amplia gama de robóticas (desde 2R hasta 10R). Ideal para mantenimiento de equipos compactos manteniendo un arco de luz estable.",
     "precio": "75.00",
-    "imagenes": ["image_e76623.png", "image_e76623.png", "image_e76623.png"]
+    "imagenes": ["9.1.jpg", "9.2.jpg", "9.3.jpg"]
   },
   {
     "id": 10,
@@ -77,7 +77,7 @@
     "descripcion": "Alimentación regulada para componentes electrónicos.",
     "descripcionAmplia": "Fuente de alimentación conmutada con doble salida: 12V-2A y 24V-1.5A. Perfecta para alimentar simultáneamente tarjetas lógicas y motores en equipos de audio e iluminación.",
     "precio": "32.00",
-    "imagenes": ["image_e75e61.png", "image_e75e61.png", "image_e75e61.png"]
+    "imagenes": ["10.1.jpg", "10.2.jpg", "10.3.jpg"]
   },
   {
     "id": 11,
@@ -85,7 +85,7 @@
     "descripcion": "Potencia clásica para teatro y cine.",
     "descripcionAmplia": "Lámpara de descarga HMI de 575W con base de doble contacto. Ofrece una reproducción de color superior (CRI), indispensable para estudios de grabación y escenografías profesionales.",
     "precio": "68.00",
-    "imagenes": ["image_e769c2.png", "image_e769c2.png", "image_e769c2.png"]
+    "imagenes": ["11.1.jpg", "11.2.jpg", "11.3.jpg"]
   },
   {
     "id": 12,
@@ -93,7 +93,7 @@
     "descripcion": "Repuesto confiable para efectos Scanner y Spot.",
     "descripcionAmplia": "Foco de descarga MSD 250W con arco largo. Diseñado para proporcionar una luminosidad intensa en escáneres y cabezas móviles tipo Spot de formato medio.",
     "precio": "42.00",
-    "imagenes": ["image_e7696b.png", "image_e7696b.png", "image_e7696b.png"]
+    "imagenes": ["12.1.jpg", "12.2.jpg", "12.3.jpg"]
   },
   {
     "id": 13,
@@ -101,7 +101,7 @@
     "descripcion": "Iluminación de alto rendimiento lumínico.",
     "descripcionAmplia": "Versión de alto brillo de la clásica MSD 575. Optimizada para ofrecer un flujo luminoso constante durante toda su vida útil, ideal para eventos en vivo y renta profesional.",
     "precio": "72.00",
-    "imagenes": ["image_e769c2.png", "image_e769c2.png", "image_e769c2.png"]
+    "imagenes": ["13.1.jpg", "13.2.jpg", "13.3.jpg"]
   },
   {
     "id": 14,
@@ -109,7 +109,7 @@
     "descripcion": "Control inteligente de encendido para lámparas.",
     "descripcionAmplia": "Balastra electrónica de amplio rango compatible con lámparas desde 2R hasta 10R. Regula el voltaje con precisión para asegurar un encendido instantáneo y proteger la lámpara contra variaciones.",
     "precio": "85.00",
-    "imagenes": ["image_e75e61.png", "image_e75e61.png", "image_e75e61.png"]
+    "imagenes": ["14.1.jpg", "14.2.jpg", "14.3.jpg"]
   },
   {
     "id": 15,
@@ -117,7 +117,7 @@
     "descripcion": "Distribuidor y amplificador de señal DMX.",
     "descripcionAmplia": "Dispositivo esencial para grandes montajes. Recibe una entrada DMX y la divide en 4 salidas aisladas ópticamente, amplificando la señal para evitar degradación en tiradas largas de cable.",
     "precio": "95.00",
-    "imagenes": ["https://via.placeholder.com/600", "https://via.placeholder.com/600", "https://via.placeholder.com/600"]
+    "imagenes": ["15.1.jpg", "15.2.png", "15.3.jpg"]
   },
   {
     "id": 16,
@@ -125,7 +125,7 @@
     "descripcion": "Control de iluminación desde tu PC.",
     "descripcionAmplia": "Interfaz compacta que convierte tu computadora en una consola de iluminación profesional. Controla hasta 512 canales (1 universo) mediante software como Freestyler o QLC+.",
     "precio": "35.00",
-    "imagenes": ["image_b0ce4c.png", "image_b0ce4c.png", "image_b0ce4c.png"]
+    "imagenes": ["16.1.jpg", "16.2.jpg", "16.3.jpg"]
   },
   {
     "id": 17,
@@ -133,7 +133,7 @@
     "descripcion": "Elimina el cableado de señal en tus eventos.",
     "descripcionAmplia": "Transmisor DMX inalámbrico con conector XLR de 3 pines. Utiliza frecuencias de 2.4GHz para enviar datos DMX a múltiples receptores sin interferencias y sin necesidad de cables.",
     "precio": "39.00",
-    "imagenes": ["image_e77cc5.png", "image_e77cc5.png", "image_e77cc5.png"]
+    "imagenes": ["17.1.jpg", "17.2.jpg", "17.2.jpg"]
   },
   {
     "id": 18,
@@ -141,7 +141,7 @@
     "descripcion": "Detonador inalámbrico individual de largo alcance.",
     "descripcionAmplia": "Unidad receptora con antena de alta ganancia para el disparo remoto de Sparkular o pirotecnia tradicional. Ofrece una conexión estable incluso en entornos con mucha interferencia.",
     "precio": "42.00",
-    "imagenes": ["image_dcf93f.png", "image_dcf93f.png", "image_dcf93f.png"]
+    "imagenes": ["18.1.jpg", "18.2.jpg", "18.3.jpg"]
   },
   {
     "id": 19,
@@ -149,7 +149,7 @@
     "descripcion": "Soportes reforzados para sistemas de disparo.",
     "descripcionAmplia": "Conjunto de bases diseñadas para dar estabilidad a los activadores de pirotecnia. Fabricadas en materiales resistentes al calor, aseguran que los cartuchos se mantengan en su posición vertical.",
     "precio": "120.00",
-    "imagenes": ["image_dcf93f.png", "image_dcf93f.png", "image_dcf93f.png"]
+    "imagenes": ["19.1.jpg", "19.2.jpg", "19.3.jpg"]
   },
   {
     "id": 20,
@@ -157,23 +157,16 @@
     "descripcion": "Interfaz de red profesional de alta capacidad.",
     "descripcionAmplia": "Interfaz Art-Net avanzada que soporta hasta 1024 canales DMX (2 universos completos). Ideal para controlar arreglos de pixeles o grandes cantidades de cabezas móviles desde software profesional.",
     "precio": "180.00",
-    "imagenes": ["image_e77c52.png", "image_e77c52.png", "image_e77c52.png"]
+    "imagenes": ["20.1.jpg", "20.2.jpg", "20.3.jpg"]
   },
-  {
-    "id": 21,
-    "nombre": "Fuente Conmutada Industrial 12V / 24V",
-    "descripcion": "Alimentación estable para pantallas y robóticas.",
-    "descripcionAmplia": "Fuente de poder de alta capacidad con rango de entrada universal (100-240V). Provee salidas de voltaje ultra-limpias para componentes sensibles de audio y video.",
-    "precio": "55.00",
-    "imagenes": ["image_e75e61.png", "image_e75e61.png", "image_e75e61.png"]
-  },
+  
   {
     "id": 22,
     "nombre": "Amplificador Sinbosen K4-450 (4 Canales)",
     "descripcion": "Potencia multicanal compacta y eficiente.",
     "descripcionAmplia": "Amplificador profesional de 4 canales clase D. Ofrece una respuesta de frecuencia cristalina y gran eficiencia energética, ideal para sistemas de monitoreo o altavoces de rango medio.",
     "precio": "580.00",
-    "imagenes": ["https://via.placeholder.com/600", "https://via.placeholder.com/600", "https://via.placeholder.com/600"]
+    "imagenes": ["22.1.jpg", "22.2.jpg", "22.3.jpg"]
   },
   {
     "id": 23,
@@ -181,7 +174,7 @@
     "descripcion": "Animaciones y efectos volumétricos potentes.",
     "descripcionAmplia": "Sistema láser multicolor de 2000mW (2W) con escáneres de alta velocidad. Capaz de proyectar logotipos, textos y efectos de túnel. Controlable vía DMX o protocolo ILDA por computadora.",
     "precio": "450.00",
-    "imagenes": ["https://via.placeholder.com/600", "https://via.placeholder.com/600", "https://via.placeholder.com/600"]
+    "imagenes": ["23.1.jpg", "23.2.jpg", "23.3.png"]
   },
   {
     "id": 24,
@@ -189,7 +182,7 @@
     "descripcion": "El estándar de potencia para subwoofers.",
     "descripcionAmplia": "Amplificador de 4 canales de alta potencia (2500W por canal a 4 ohms). Su arquitectura robusta es ideal para alimentar arreglos lineales (Line Array) y sistemas de subwoofers pesados.",
     "precio": "1100.00",
-    "imagenes": ["https://via.placeholder.com/600", "https://via.placeholder.com/600", "https://via.placeholder.com/600"]
+    "imagenes": ["24.1.jpg", "24.2.jpg", "24.3.jpg"]
   },
   {
     "id": 25,
@@ -197,7 +190,7 @@
     "descripcion": "Repuesto versátil para Beam de formato medio.",
     "descripcionAmplia": "Foco de alta descarga con reflector dicroico. Compatible con versiones de 200W y 250W, proporcionando un haz de luz definido y con gran alcance kilométrico.",
     "precio": "88.00",
-    "imagenes": ["image_e70b72.png", "image_e70b72.png", "image_e70b72.png"]
+    "imagenes": ["25.1.jpg", "25.2.jpg", "25.3.jpg"]
   },
   {
     "id": 26,
@@ -205,7 +198,7 @@
     "descripcion": "Herramienta de diagnóstico para el escenario.",
     "descripcionAmplia": "Probador de cables universal compatible con XLR, Plug, RCA, SpeakOn, RJ45 y MIDI. Indispensable para ingenieros de audio para detectar fallas en el cableado de forma instantánea.",
     "precio": "45.00",
-    "imagenes": ["https://via.placeholder.com/600", "https://via.placeholder.com/600", "https://via.placeholder.com/600"]
+    "imagenes": ["26.1.jpg", "26.2.jpg", "26.3.jpg"]
   },
   {
     "id": 27,
@@ -213,7 +206,7 @@
     "descripcion": "Claridad vocal y durabilidad legendaria.",
     "descripcionAmplia": "Micrófono dinámico/condensador profesional diseñado para capturar voces e instrumentos con máxima fidelidad. Su patrón supercardioide minimiza el ruido de fondo en presentaciones en vivo.",
     "precio": "165.00",
-    "imagenes": ["https://via.placeholder.com/600", "https://via.placeholder.com/600", "https://via.placeholder.com/600"]
+    "imagenes": ["27.1.jpg", "27.2.jpg", "27.3.jpg"]
   },
   {
     "id": 28,
@@ -221,6 +214,6 @@
     "descripcion": "Conversor pasivo de señal para distancias largas.",
     "descripcionAmplia": "Adaptador XLR a RJ45 que permite enviar señal DMX a través de cableado de red. Ideal para utilizar la infraestructura de red de los recintos y evitar tiradas de cable XLR costosas.",
     "precio": "15.00",
-    "imagenes": ["image_e70b92.png", "image_e70b92.png", "image_e70b92.png"]
+    "imagenes": ["28.1.jpg", "28.2.jpg", "28.3.jpg"]
   }
 ]
