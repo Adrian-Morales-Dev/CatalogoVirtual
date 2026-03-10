@@ -208,5 +208,13 @@
     "descripcionAmplia": "Adaptador XLR a RJ45 que permite enviar señal DMX a través de cableado de red. Ideal para utilizar la infraestructura de red de los recintos y evitar tiradas de cable XLR costosas.",
     "precio": "1600.00",
     "imagenes": ["28.1.jpg", "28.2.jpg", "28.3.jpg"]
+  },
+  {
+    "id": 29,
+    "nombre": "Amplificador Profesional de 4 Canales (4x1500W)",
+    "descripcion": "Potencia versátil para sistemas de medios y subwoofers.",
+    "descripcionAmplia": "Amplificador de alto rendimiento diseñado para aplicaciones exigentes de audio en vivo. Ofrece una entrega de potencia estable de 1000W por canal a 8 ohms y 1500W a 4 ohms, lo que lo convierte en la solución ideal para alimentar arreglos de medios o sistemas de subwoofers de formato medio con total claridad y pegada.",
+    "precio": "8600.00",
+    "imagenes": ["29.1.jpg", "29.2.jpg", "29.3.jpg"]
   }
 ]
