@@ -45,7 +45,7 @@
     "descripcion": "Máxima potencia lumínica para largo alcance.",
     "descripcionAmplia": "Lámpara de descarga de 550W (Tecnología 25R) diseñada para proyectar un haz de luz extremadamente denso. Es el repuesto ideal para cabezas móviles de alta potencia en estadios y festivales.",
     "precio": "3,000.00",
-    "imagenes": ["33.1.jpg", "33.2.jpg", "33.3.jpg"]
+    "imagenes": ["33.1.png", "33.2.jpg", "33.3.jpg"]
   },
   {
     "id": 4,
@@ -69,7 +69,7 @@
     "descripcion": "Potencia multicanal de alto rendimiento.",
     "descripcionAmplia": "Unidad de amplificación versátil diseñada para aplicaciones exigentes. Entrega 1500W por canal, asegurando un audio cristalino y una pegada contundente en sistemas de medios y monitoreo.",
     "precio": "8,000.00",
-    "imagenes": ["30.1.jpg", "30.2.jpg", "30.3.jpg"]
+    "imagenes": ["30.1.png", "30.2.jpg", "30.3.jpg"]
   },
   {
     "id": 6,
@@ -133,7 +133,7 @@
     "descripcion": "Fuente industrial triple salida para cabezas móviles.",
     "descripcionAmplia": "Fuente de alimentación robusta para equipos de iluminación profesional. Entrega voltajes precisos para ventiladores, motores de paso y encendido de lámpara en un solo módulo.",
     "precio": "1,200.00",
-    "imagenes": ["36.1.jpg", "36.2.jpg", "36.3.jpg"]
+    "imagenes": ["36.1.png", "36.2.jpg", "36.3.jpg"]
   },
   {
     "id": 11,
