@@ -2,7 +2,27 @@ const MI_WHATSAPP = "5215569336219";
 let currentImages = [];
 let currentIndex = 0;
 
+// Arreglo de testimonios simulados (puedes editarlos cuando quieras)
+const testimonios = [
+    {
+        nombre: "DJ Marco, Sonido",
+        comentario: "Llevaba tiempo buscando refacciones para mi fuente FP10000Q y aquí encontré justo la tarjeta de potencia que necesitaba. Mi amplificador quedó como nuevo, tiran durísimo los bajos. Excelente trato.",
+        
+    },
+    {
+        nombre: "Carlos R., Ingeniero de Video",
+        comentario: "Compré el controlador Novastar y el envío fue rapidísimo. El equipo funciona a la perfección en mis pantallas LED. Te resuelven las dudas técnicas al instante por WhatsApp, 100% recomendados.",
+       
+    },
+    {
+        nombre: "Luis S., Producciones",
+        comentario: "Los kits de balastra y focos 7R salieron de muy buena calidad. Reviví 4 cabezas móviles que tenía arrumbadas en la bodega. Definitivamente volveré a comprar equipo con ustedes.",
+        
+    }
+];
+
 window.addEventListener('load', () => {
+    // --- CARGAR CATÁLOGO ---
     const container = document.getElementById('catalogo');
     fetch('productos.json')
         .then(res => res.json())
@@ -21,6 +41,26 @@ window.addEventListener('load', () => {
                 container.appendChild(card);
             });
         });
+
+    // --- CARGAR TESTIMONIOS ---
+    const testimoniosContainer = document.getElementById('testimonios-grid');
+    testimonios.forEach(testimonio => {
+        const tCard = document.createElement('div');
+        tCard.className = 'testimonio-card';
+        
+        // Generar las estrellitas dinámicamente
+        let estrellasHTML = '';
+        for(let i=0; i<testimonio.calificacion; i++){
+            estrellasHTML += '<i class="fas fa-star" style="color: #fbbf24; margin-right: 2px;"></i>';
+        }
+
+        tCard.innerHTML = `
+            <div style="margin-bottom: 15px;">${estrellasHTML}</div>
+            <p style="font-style: italic; color: #475569; margin-bottom: 15px; line-height: 1.5;">"${testimonio.comentario}"</p>
+            <h4 style="color: #0f172a; font-size: 1rem;">- ${testimonio.nombre}</h4>
+        `;
+        testimoniosContainer.appendChild(tCard);
+    });
 });
 
 function openModal(prod) {
