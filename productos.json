@@ -63,14 +63,7 @@
     "precio": "800.00",
     "imagenes": ["5.1.jpg", "5.2.jpg", "5.3.jpg"]
   },
-  {
-    "id": 30,
-    "nombre": "Amplificador 4 Canales 1500 Watts Pro",
-    "descripcion": "Potencia multicanal de alto rendimiento.",
-    "descripcionAmplia": "Unidad de amplificación versátil diseñada para aplicaciones exigentes. Entrega 1500W por canal, asegurando un audio cristalino y una pegada contundente en sistemas de medios y monitoreo.",
-    "precio": "8,000.00",
-    "imagenes": ["30.1.jpg", "30.2.jpg", "30.3.jpg"]
-  },
+  
   {
     "id": 6,
     "nombre": "Lámpara NSD 150W",
@@ -270,5 +263,13 @@
     "descripcionAmplia": "Ofrece una entrega de potencia estable de 1000W a 8 ohms y 1500W a 4 ohms con total claridad.",
     "precio": "8600.00",
     "imagenes": ["29.1.jpg", "29.2.jpg", "29.3.jpg"]
+  },
+  {
+    "id": 37,
+    "nombre": "Amplificador 4 Canales 1500 Watts Pro",
+    "descripcion": "Potencia multicanal de alto rendimiento.",
+    "descripcionAmplia": "Unidad de amplificación versátil diseñada para aplicaciones exigentes. Entrega 1500W por canal, asegurando un audio de calidad y una pegada contundente en sistemas de medios y monitoreo.",
+    "precio": "8,000.00",
+    "imagenes": ["37.1.jpg", "37.2.jpg", "37.3.jpg"]
   }
 ]
