@@ -51,6 +51,30 @@ body { font-family: 'Inter', sans-serif; background-color: var(--gris-fondo); co
 .discrete-social-btn { width: 50px; height: 50px; border-radius: 50%; border: 1px solid rgba(255,255,255,0.2); display: flex; align-items: center; justify-content: center; color: white; text-decoration: none; font-size: 1.2rem; transition: 0.3s; }
 .discrete-social-btn:hover { background: var(--azul-brillante); border-color: var(--azul-brillante); transform: translateY(-5px); box-shadow: 0 5px 15px rgba(0, 198, 255, 0.3); }
 
+/* --- ESTILOS PARA TESTIMONIOS --- */
+.testimonios-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 2rem;
+    max-width: 1200px;
+    margin: 40px auto 0;
+    padding: 0 20px;
+}
+
+.testimonio-card {
+    background-color: #ffffff;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+    border: 1px solid #e2e8f0;
+    transition: transform 0.3s ease;
+    text-align: left;
+}
+
+.testimonio-card:hover {
+    transform: translateY(-5px);
+}
+
 .main-footer { background: #0b1121; color: white; padding: 60px 5% 20px; border-top: 4px solid var(--azul-metalico); }
 .footer-content { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 40px; }
 .footer-section h3, .footer-section h4 { color: var(--azul-brillante); margin-bottom: 20px; }
