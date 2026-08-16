@@ -257,14 +257,6 @@
     "imagenes": ["28.1.jpg", "28.2.jpg", "28.3.jpg"]
   },
   {
-    "id": 29,
-    "nombre": "Amplificador Profesional de 4 Canales (4x1500W)",
-    "descripcion": "Potencia versátil para sistemas de medios y subwoofers.",
-    "descripcionAmplia": "Ofrece una entrega de potencia estable de 1000W a 8 ohms y 1500W a 4 ohms con total claridad.",
-    "precio": "8600.00",
-    "imagenes": ["29.1.jpg", "29.2.jpg", "29.3.jpg"]
-  },
-  {
     "id": 37,
     "nombre": "Amplificador 4 Canales 1500 Watts Pro",
     "descripcion": "Potencia multicanal de alto rendimiento.",
