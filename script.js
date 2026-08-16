@@ -5,7 +5,7 @@ let currentIndex = 0;
 // Arreglo de testimonios
 const testimoniosData = [
     {
-        nombre: "DJ Marco, Sonido Éxtasis",
+        nombre: "DJ Marco, Sonido",
         comentario: "Llevaba tiempo buscando refacciones para mi fuente FP10000Q y aquí encontré justo la tarjeta de potencia que necesitaba. Mi amplificador quedó como nuevo, tiran durísimo los bajos. Excelente trato.",
         calificacion: 5
     },
@@ -15,7 +15,7 @@ const testimoniosData = [
         calificacion: 5
     },
     {
-        nombre: "Luis S., Producciones Sinergia",
+        nombre: "Luis S., Producciones",
         comentario: "Los kits de balastra y focos 7R salieron de muy buena calidad. Reviví 4 cabezas móviles que tenía arrumbadas en la bodega. Definitivamente volveré a comprar equipo con ustedes.",
         calificacion: 5
     }
